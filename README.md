@@ -1,5 +1,4 @@
-# Programacion-con-R-2020 
-## Módulo: Nombre del modulo
+## Módulo: Estadística y Programación con R
 
 ### OBJETIVO 
  - Agrega lo que van a aprender en el modulo
