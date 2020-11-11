@@ -1,29 +1,23 @@
- 
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 1. Lectura y escritura de datos 
 
-### OBJETIVO 
+## Objetivo
+Reforzar la lectura de ficheros CSV y la escritura de variables resultado en un nuevo fichero CSV, de este modo será fácil su lectura en otros lenguajes o plataformas.
 
-- Lo que esperamos que el alumno aprenda 
+## Requisitos
+Haber realizado el prework, además de haber realizado los ejemplos de la sesión.
 
-#### REQUISITOS 
+## Desarrollo
+Abre el fichero que se encuentra en el repositorio y obten sus carácteristicas, para finalmente imprimir los resultados en un fichero CSV.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+```R
+1. Leer el archivo "netflix_titles.csv" desde Github
+(https://raw.githubusercontent.com/ecoronadoj/Sesion_1/main/Data/netflix_titles.csv), almacenarlo en un df llamado netflix
 
-#### DESARROLLO
+2. Obtener la dimensión y el tipo de objeto que se obtiene
 
-Agrega las instrucciones generales del ejemplo o reto
+3. Obtener los títulos que se estrenaron después del 2015. Almacenar este df en una variable llamada net.2015
 
-<details>
+4. Escribir los resultados en un archivo .csv llamado res.netflix.csv
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
+```
