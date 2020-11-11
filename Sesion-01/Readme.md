@@ -28,3 +28,6 @@ Tendrás las nociones básicas para poder manipular DataSets, poder realizar lec
 - [Reto 2](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Reto-02)
 - [Reto 3](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Reto-03)
 
+#### Postwork de la sesión
+
+- [Postwork](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Postwork)
