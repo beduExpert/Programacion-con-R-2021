@@ -1,16 +1,31 @@
+# Sesion 03.  Análisis Exploratorio de Datos (AED o EDA) con R
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
+#### Objetivo
+Lograr un mejor conocimiento o entendimiento del problema con el cual se relacionan los datos, de una manera relativamente fácil y rápida, sin utilizar modelos o teoría matemática avanzada
 
-## Titulo de la Sesion 
+#### Durante el transcurso de esta sesión serás capaz de desarrollar las siguientes capacidades de R 
 
-### OBJETIVOS 
+Conocer mejor el conjunto de datos con el que se esté trabajando, 
+- Llevar a cabo visualizaciones
+- Plantear hipótesis 
+- Formular preguntas relevantes.  
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+##### Aquí encontraras los ejemplos de la sesión 3.
 
-#### ORGANIZACION DE LA CLASE 
+- [Ejemplo 1](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-03/Ejemplo-01) Paquete ggplot2
+- [Ejemplo 2](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-03/Ejemplo-02) Gráficos de dispersión
+- [Ejemplo 3](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-03/Ejemplo-03) Boxplots y outliers
+- [Ejemplo 4](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-03/Ejemplo-04) Histogramas
+- [Ejemplo 5](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-03/Ejemplo-05) Gráficos de barras
+- [Ejemplo 6](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-03/Ejemplo-06) Series de tiempo y descomposición
 
-- Tema que veran en el ejemplo
+##### Retos de la sesión 3.
 
-	- [Ejemplo 01](Ejemplo-01)
-	- [Reto 01](Reto-01)
+- [Reto 1](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-03/Reto-01)
+- [Reto 2](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-03/Reto-02)
+- [Reto 3](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-03/Reto-03)
+
+#### Postwork de la sesión
+
+- [Postwork](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-03/Postwork)
 
