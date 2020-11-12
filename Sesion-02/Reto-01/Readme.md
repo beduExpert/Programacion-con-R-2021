@@ -1,29 +1,14 @@
- 
+# Reto 1.
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+Considere el siguiente vector
 
-### OBJETIVO 
+```R
+set.seed(134)
+x <- round(rnorm(1000, 175, 6), 1)
+```
 
-- Lo que esperamos que el alumno aprenda 
+1. Calcule, la media, mediana y moda de los valores en `x`
 
-#### REQUISITOS 
+2. Obtenga los deciles de los números en `x`
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
-
-#### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
+3. Encuentre la rango intercuartílico, la desviación estándar y varianza muestral de las mediciones en `x`
