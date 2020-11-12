@@ -1,28 +1,66 @@
+# Ejemplo 2. Características de los objetos (**str**, **summary**, **head** y **View**)
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+#### Objetivo
 
-## Titulo del Ejemplo
+- Conocer mejor conjuntos de datos guardados como data frames en `R` de una forma rápida, mediante algunas funciones útiles y de uso común.
 
-### OBJETIVO
+#### Requisitos
 
-- Lo que esperamos que el alumno aprenda
+- Haber instalado previamente R y RStudio 
+- Saber interpretar las medidas de tendencia central y de posición
 
-#### REQUISITOS
+#### Desarrollo
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+#### Función `str`
 
-#### DESARROLLO
+`str` es una función que muestra de manera compacta la estructura interna de un objeto de R. Por ejemplo, si usamos como argumento de `str` el conjunto de datos `iris` que podemos encontrar en R
 
-Agrega las instrucciones generales del ejemplo o reto
+```R
+str(iris)
+```
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+entonces la salida de la instrucción nos muestra el tipo de objeto, número de observaciones y de variables, así como el tipo de dato al que corresponde cada variable.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+#### Función `summary`
 
-![imagen](https://picsum.photos/200/300)
+La función `summary` es una función genérica usada para obtener resumenes de diferentes objetos de R, por ejemplo
 
+```R
+summary(1:100)
+summary(mtcars)
+```
 
+También es útil para obtener resumenes de los resultados de diferentes ajustes a modelos
+
+```R
+set.seed(57)
+x <- rnorm(35)
+e <- rnorm(35)
+y <- 5 + 2*x + e
+modelo <- lm(y~x)
+summary(modelo)
+```
+
+#### Función `head`
+
+La función `head` devuelve la primera parte de un data frame, tabla, matriz, vector o función. Por ejemplo, al usar el data frame `mtcars` como argumento de la función `head`, se devolverán únicamente las primeras seis filas del data frame
+
+```R
+head(mtcars)
+```
+
+la función `tail` funciona de manera similar, pero en lugar de devolver la primera parte de un objeto, devuelve la última parte de este, por ejemplo, al ejecutarse la siguiente instrucción
+
+```R
+tail(mtcars)
+```
+
+se devolverán las últimas seis filas del data frame
+
+#### Función `View`
+
+La función `View` aplicada a un objeto de R como un data frame, invoca un visor de datos al estilo de una hoja de cálculo, por ejemplo
+
+```R
+View(iris)
+```
