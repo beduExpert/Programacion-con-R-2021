@@ -1,6 +1,6 @@
-# Sesion 1. Introducción a R y Software necesario. (Github, Tipos de Datos)
+# Sesion 1. Introducción a R y Software (Github, Tipos de Datos)
 
-Tendrás las nociones básicas para poder manipular DataSets, poder realizar lectura datos, para posteriormente realizar análisis exploratorios y poder llegar a una mejor comprensión de los objetos que maneja R para su uso y manipulación .
+Identificar las nociones básicas para poder manipular DataSets, poder realizar lectura datos, para posteriormente realizar análisis exploratorios y poder llegar a una mejor comprensión de los objetos que maneja R para su uso y manipulación .
 
 
 #### Durante el transcurso de esta sesión serás capaz de desarrollar las siguientes capacidades de R 
