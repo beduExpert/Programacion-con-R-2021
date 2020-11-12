@@ -1,28 +1,61 @@
+# Ejemplo 3. Boxplots y outliers
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+#### Objetivo
+- Generar y comprender los gráficos de tipo boxplot
+- Introducción a la distribución de los datos
 
-## Titulo del Ejemplo
+#### Requisitos
+- Lectura de ficheros CVS
+- Nociones básicas de ggplot
 
-### OBJETIVO
+#### Desarrollo
+Comenzamos leyendo un fichero, el cual contiene información sobre dos grupos de control G1 y G2, a los cuales se les realizó  a cada uno una medición en 3 momentos diferentes C1, C2 y C3
 
-- Lo que esperamos que el alumno aprenda
+Cargamos las librerias necesarias para la realización del ejemplo, además del fichero CVS a utilizar
+```R
+library(ggplot2)
+library(dplyr)
 
-#### REQUISITOS
+data2 <- read.csv("../Sesion_03/boxp.csv")
+```
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+Revisamos el encabezado del fichero y el nombre de sus variables o columnas
+```R
+head(data2)
+names(data2)
+```
 
-#### DESARROLLO
+Vamos a reliazar un cambio en la variable `Mediciones` para practicar 
+```R
+data <- mutate(data2, Mediciones = Mediciones*1.23)
+head(data)
+```
+Observamos algunos datos estádisticos sobre las variables
+```R
+summary(data)
+```
 
-Agrega las instrucciones generales del ejemplo o reto
+Como estamos ante la presencia de `NA´s` los eliminamos con `complete.cases()` y solamente seleccionamos aquellos sin `NA`s` y convertimos en factores la variable `Categoria` y `Grupo`
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+```R
+bien <- complete.cases(data)
+data <- data[bien,]
+data <- mutate(data, Categoria = factor(Categoria), Grupo = factor(Grupo))
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+Finalmente realizamos el boxplot
+```R
+ggplot(data, aes(x = Categoria, y = Mediciones, fill = Grupo)) + geom_boxplot() +
+  ggtitle("Boxplots") +
+  xlab("Categorias") +
+  ylab("Mediciones")
+```
 
-![imagen](https://picsum.photos/200/300)
-
-
+Agregamos el nombre de las etiquetas para los grupos G1 y G2
+```R
+ggplot(data, aes(x = Categoria, y = Mediciones, fill = Grupo)) + geom_boxplot() +
+  scale_fill_discrete(name = "Dos Gps", labels = c("G1", "G2")) + 
+  ggtitle("Boxplots") +
+  xlab("Categorias") +
+  ylab("Mediciones")
+```
