@@ -46,11 +46,8 @@ R <- gsub("H", 1, R) # Indicamos la victoria del equipo de casa con 1
 R <- gsub("D", 2, R) # Indicamos el empate con 2
 R <- gsub("A", 3, R) # Indicamos la victoria del equipo Visitante con 3
 R <- as.numeric(R)
-
-######
-
-# Apuestas
 ```
+** Apuestas ** 
 
 Vamos a suponer que las apuestas son 1 a 1, es decir, que los apostadores, 
 arriesgan la misma cantidad de dinero en cada apuesta
