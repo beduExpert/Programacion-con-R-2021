@@ -2,7 +2,13 @@
 
 #### Objetivo
 
+- Tener una herramienta para identificar filas con valores perdidos (NA)
+- Filtrar filas sin valores perdidos cuando estas se hallan identificados
+
 #### Requisitos
+
+- Tener conocimientos básicos para manipular data frames
+- Saber filtrar filas de data frames
 
 #### Desarrollo
 
