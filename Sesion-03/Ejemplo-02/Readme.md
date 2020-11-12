@@ -1,28 +1,49 @@
+# Ejemplo 2. Gráficos de dispersión (scatter plot)  
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+#### Objetivo
+- Desarrollar habilidades para realizar e interpretar scatter plots
+- Utilizar diferentes funciones de ggplot 
+- Variantes de scatter plots
 
-## Titulo del Ejemplo
+#### Requisitos
+- Tener conceptos básicos de gráficación 
+- Haber realizado el prework
 
-### OBJETIVO
-
-- Lo que esperamos que el alumno aprenda
-
-#### REQUISITOS
-
-1. Lo necesario para desarrollar el ejemplo o el Reto
-
-#### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
-
-![imagen](https://picsum.photos/200/300)
+#### Desarrollo
 
 
+ Realizamos un scatter plot de las variables `wt` y `mpg`, debemos utilizar necesariamente `geom_point()`
+```R
+my_scatplot <- ggplot(mtcars,aes(x=wt,y=mpg)) + 
+  geom_point()
+```
+
+Adicionalmente se puede agregar una línea de tendencia 
+```R
+my_scatplot <- ggplot(mtcars,aes(x=wt,y=mpg)) + 
+  geom_point() + 
+  geom_smooth(method = "lm", se = T)  # modelo lineal, cambia el parametro `se`, este hace referencia al intervalo de confianza
+```
+Agregando los nombres de los ejes, observa que se almacenó el gráfico en el objeto **my_scatplot** (nota que pueden agregarse más características seguido del signo `+`)
+
+```R
+my_scatplot + xlab('Weight (x 1000lbs)') + ylab('Miles per Gallon')
+```
+
+Otras características interesantes
+
+```R
+my_scatplot <- ggplot(mtcars,aes(x=wt,y=mpg,col=cyl)) + geom_point()
+my_scatplot + labs(x='Weight (x1000lbs)',y='Miles per Gallon',colour='Number of\n Cylinders')
+```
+
+Haciendo un facewrap con la variable `cyl`
+```R
+my_scatplot + facet_wrap("cyl")
+```
+Separándolas por tipo de transmisión (am =	Transmission (0 = automatic, 1 = manual))
+```R
+my_scatplot + facet_grid(am~cyl)
+```
+
+Como puedes observar, hay muchas formas de representar el gráfico de disperción, éstas son algunas de ellas, obviamente existen muchas más. 
