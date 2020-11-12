@@ -14,7 +14,14 @@
 
 2. Importe los archivos descargados a `R`
 
-3. Usando la función `select` del paquete `dplyr`, seleccione únicamente las columnas:  **Date**, **HomeTeam**, **AwayTeam**, **FTHG**, **FTAG** y **FTR**
+3. Usando la función `select` del paquete `dplyr`, seleccione únicamente las columnas:  
+
+- **Date**
+- **HomeTeam**
+- **AwayTeam**
+- **FTHG** 
+- **FTAG** 
+- **FTR**
 
 4. Combine cada uno de los data frames en un único data frame con ayuda de las funciones:
 
