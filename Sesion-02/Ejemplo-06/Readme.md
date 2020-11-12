@@ -1,6 +1,15 @@
 # Ejemplo 6. Lectura de JSON y XML
 
+#### Objetivo
 
+- Aprender a importar archivos json y xml a `R` y guardar los datos como data frames
+
+#### Requisitos
+
+- Conocer lo básico acerca de archivos xml y json
+- Saber manipular data frames en `R`
+
+#### Desarrollo
 
 Para comenzar necesimos instalar los paquetes `rjson`, y `XML`, por ejemplo, utilizando la función `install.packages`. Una vez que hemos instalado los paquetes, podemos cargarlos en `R` mediante la instrucción
 
