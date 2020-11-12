@@ -5,13 +5,13 @@
 
 ### OBJETIVO
 
-- Realizar descarga de archivos desde inernet
+- Realizar descarga de archivos desde internet
 - Utilizar funciones tipo if
 - Gráfica de resultados
 
 #### REQUISITOS
 
-1. R, RSTudio
+1. R, RStudio
 2. Haber realizado el prework y seguir el curso de los ejemplos de la sesión
 
 #### DESARROLLO
