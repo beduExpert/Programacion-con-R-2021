@@ -1,5 +1,13 @@
 # Reto 1.
 
+#### Objetivo
+
+- Recordar las funciones de `R` para calcular medidas de tendencia central, de posición y de dispersión y lograr una mayor confianza con el lenguaje de programación con enfoque en estadística
+
+#### Requisitos
+
+- Haber estudiado el Prework y trabajado con el Work
+
 Considere el siguiente vector
 
 ```R
