@@ -3,7 +3,8 @@
 #### Objetivo
 - Generar histogramas de datasets
 - Cambiar propiedades de los histogramas 
-- 
+-  Compar entre `hist()` y `ggplot`
+
 #### Requisitos
 - Manipulación de datos con R
 - Lectura de ficheros
