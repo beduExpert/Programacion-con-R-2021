@@ -1,29 +1,18 @@
- 
+# Reto 2. Algunos estimadores puntuales insesgados comunes
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+# Objetivo
 
-### OBJETIVO 
+- Entender la idea de estimador puntual insesgado 
 
-- Lo que esperamos que el alumno aprenda 
+# Requisitos
 
-#### REQUISITOS 
+- Haber estudiado el Prework y el Work
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+# Desarrollo
 
-#### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
+1. Genere 1500 muestras de tamaño 67 de la distribución exponencial con parámetro 5
+2. Obtenga las 1500 medias correspondientes a cada una de las muestras
+3. Realice el histograma de frecuencias de las 1500 medias
+4. Encuentre la media muestral y desviación estándar muestral de las 1500 medias 
+5. Compare la media muestral encontrada en el paso anterior con la media real (1/5) de la población de la cual provienen las muestras 
+6. Compare la desviación estándar muestral encontrada con la desviación estándar real (1/5) de la población de la cual provienen las muestras pero dividida por 67 (el tamaño de las muestras)
