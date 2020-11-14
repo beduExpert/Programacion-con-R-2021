@@ -83,6 +83,7 @@ Ahora vamos a determinar si el comportamiento en la tendencia es estocástico o 
 install.packages("tseries")
 library(tseries)
 
+```R
 adf <- adf.test(tsb, alternative ="stationary", k=12)
 ```
 
