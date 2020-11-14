@@ -1,29 +1,25 @@
- 
+# Reto 1. Series de tiempo
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+#### Proposito
+- Poner en práctica los conocimientos de series de tiempo para poder manipularlas y así obtener información relevante
+- Implementar la descomposición **aditiva** y **multiplicativa**
 
-### OBJETIVO 
+#### Requisitos
+- Haber llevado seguimiento de los ejercicios en clase
+- Prework
 
-- Lo que esperamos que el alumno aprenda 
+#### Desarrollo 
 
-#### REQUISITOS 
+Utiliza los datos (AP), de la siguiente librería para realizar lo que se te pide 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+```R
+library(forecast)
+data(AirPassengers)
+AP <- AirPassengers
+```
 
-#### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
+1. Realiza la gráfica la serie de tiempo 
+2. Descompón la serie de tiempo en aditiva y multiplicativa y realiza sus gráficas
+3. Realiza la gráfica de la descomposición aditiva con la tendencia y la estacionalidad utilizando el comando `lines`
+4. Realiza la gráfica de la descomposición multiplicativa con la tendencia y la estacionalidad utilizando el comando `lines`
+5. Ejecuta la prueba de _Dickey-Fuller_ para determinar si el comportamiento es estocástico
