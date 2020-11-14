@@ -15,9 +15,8 @@ Utilizaremos un data set de Kaggle el cual contiene datos sobre la temperatura e
 
 ```R
 library(dplyr)    
-setwd("c:/Users/User/Documents/Bedu/Sesion_03/")
     
-w.brazil <- read.csv("../Sesion_03/ts_brazil/station_fortaleza.csv")
+w.brazil <- read.csv("../station_fortaleza.csv")
 
 w.brazil <- w.brazil[, -c(1,14:18)]
 class(w.brazil)
