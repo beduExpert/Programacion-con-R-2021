@@ -35,4 +35,4 @@ install.packages("tseries")
 library(tseries)
 adf.test(AP, alternative ="stationary", k=12)
 
-# NOTA: Si _p<0.05_ se descarta la hipotesis nula, es decir que la serie tiene un comportamiento estocástico, caso contrario la serie de tiempo será no tienen comportamiento estocástico, será no estacionaria. 
+# NOTA: Si _p<0.05_ se descarta la hipotesis nula, es decir que la serie tiene un comportamiento estocástico, caso contrario la serie de tiempo será no tienen comportamiento estocástico, será no estacionaria.
