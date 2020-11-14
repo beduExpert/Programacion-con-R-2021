@@ -1,29 +1,25 @@
- 
+# Reto 3. Contraste de hipótesis
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+# Objetivo
 
-### OBJETIVO 
+- Llevar a cabo un contraste de hipótesis acerca de la media de una población normal cuando el tamaño muestral es pequeño.
 
-- Lo que esperamos que el alumno aprenda 
+# Requisitos
 
-#### REQUISITOS 
+- Haber trabajado con el Prework y el Work
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+# Desarrollo
 
-#### DESARROLLO
+Dada una muestra aleatoria de tamaño n = 10 de una distribución normal
 
-Agrega las instrucciones generales del ejemplo o reto
+```R
+set.seed(124)
+muestra <- rnorm(n = 10, mean = 110, sd = 7) # muestra pequeña
+tail(as.data.frame(muestra))
+```
 
-<details>
+estamos interesados en contrastar las hipótesis H0: mu = 120 *vs* H1: mu < 120 (contraste de cola inferior).
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
+1. Decida si rechazar o no la hipótesis nula si el nivel de significancia es alpha = 0.05
+2. Obtenga el p-value de la prueba
+3. Lleve a cabo la prueba con la función `t.test`
