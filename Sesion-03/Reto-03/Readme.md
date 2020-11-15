@@ -1,25 +1,29 @@
-# Reto 3. Contraste de hipótesis
+# Reto 3. Estádisticos de la NBA
 
-# Objetivo
+Full players stats from the 2014-2015 season + personal details such as height. weight, etc.
 
-- Llevar a cabo un contraste de hipótesis acerca de la media de una población normal cuando el tamaño muestral es pequeño.
+#### Objetivo
+- Generar histogramas
+- Generar gráficos de dispersión
+- Identificar datos relevantes 
+- Graficas de Boxplot
 
-# Requisitos
+#### Requisito
+- Manejo de data frames
+- Graficas básicas
 
-- Haber trabajado con el Prework y el Work
+#### Desarrollo
 
-# Desarrollo
+1. Generar un histograma de los minuntos totales (`MIN`), de los jugadores y agregar una línea donde se muestre la media
 
-Dada una muestra aleatoria de tamaño n = 10 de una distribución normal
+2. Generar un histograma de edad (`Age`) y agregar una línea con la media
 
-```R
-set.seed(124)
-muestra <- rnorm(n = 10, mean = 110, sd = 7) # muestra pequeña
-tail(as.data.frame(muestra))
-```
+3. Graficar un scatterplot de las variables `Weight` y  `Height` y ver observar la correlacón que existe entre ambas variables (1 sola gráfica)
 
-estamos interesados en contrastar las hipótesis H0: mu = 120 *vs* H1: mu < 120 (contraste de cola inferior).
+4. Utiliza la función `which.max` para saber quién es el jugador más alto, una vez hecho esto, presenta los resultados en una leyenda que diga "El jugador más alto es: `Name`, con una altura de: `Height`". Las unidades de altura deben ser en metros.
 
-1. Decida si rechazar o no la hipótesis nula si el nivel de significancia es alpha = 0.05
-2. Obtenga el p-value de la prueba
-3. Lleve a cabo la prueba con la función `t.test`
+5. Utiliza la función `which.min` para saber quién es el jugador más bajito, una vez hecho esto, presenta los resultados en una leyenda que diga "El jugador más BAJITO es: `Name`, con una altura de: `Height`". Las unidades de altura deben ser en metros.
+
+6. ¿Cuál es la altura promedio?, representa el resultado en una frase que diga: "La altura promedio es: ALTURA"
+
+7. Generar un boxplot donde se representen las Asistencias totales (`AST.TOV`) vs Puntos (`PTS`), además has un face wrap con la posición (`Pos`). ¿Cuál posición es la que realiza más asistencias totales, y anota más puntos?
