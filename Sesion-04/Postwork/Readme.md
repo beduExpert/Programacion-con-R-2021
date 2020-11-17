@@ -1,29 +1,31 @@
+# Postwork Sesión 4
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+# Objetivo
 
-## Titulo del Ejemplo
+- Llevar a cabo un contraste de hipótesis acerca de la diferencia de medias de dos poblaciones normales cuando los tamaños muestrales son pequeños
 
-### OBJETIVO
+# Requisitos
 
-- Lo que esperamos que el alumno aprenda
+- R, RStudio
+- Haber trabajado con el Prework y el Work
 
-#### REQUISITOS
+# Desarrollo
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+#### Contraste de cola superior para mu1 - mu2
 
-#### DESARROLLO
+Dadas dos muestras aleatorias independientes de tamaño n1 = 8 y n2 = 9 de la distribución normal con sigma1 = sigma2
 
-Agrega las instrucciones generales del ejemplo o reto
+```R
+set.seed(666)
+m1 <- rnorm(n = 8, mean = 100, sd = 5)
+tail(as.data.frame(m1), 1)
+m2 <- rnorm(n = 9, mean = 85, sd = 5)
+tail(as.data.frame(m2), 1)
+100 - 85 # diferencia real de medias
+```
 
-<details>
+estamos interesados en contrastar las hipótesis H0: mu1 - mu2 = 0 *vs* H1: mu1 - mu2 > 0 (contraste de cola superior).
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agreges al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
-
+1. Decida si rechazar o no la hipótesis nula si el nivel de significancia es alpha = 0.05
+2. Obtenga el p-value de la prueba
+3. Lleve a cabo la prueba con la función `t.test`
