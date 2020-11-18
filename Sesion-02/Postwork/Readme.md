@@ -28,8 +28,8 @@ url <- "https://www.football-data.co.uk/mmz4281/1920/D1.csv"
 download.file(url = url, destfile = "Bundesliga1.csv", mode = "wb")
 
 
-suppressWarnings(suppressMessages(library(dplyr)))
-suppressMessages(suppressWarnings(library(ggplot2)))
+library(dplyr)
+library(ggplot2)
 ```
 
 Realizando la lectura de los datos
