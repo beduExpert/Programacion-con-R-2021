@@ -20,9 +20,6 @@ El siguiente código descarga datos de la temporada 2019-2020 de la bundesliga y
 
 Analiza brevemente el código (no es necesario que comprendas cada detalle, aunque no es difícil). Ejecuta el código y observa el gráfico que muestra los resultados. 
 
-#### Actividad
-Ejecuta el mismo código pero tomando como data frame aquel que tenga los partidos jugados desde la temporada 2010-2011 hasta la temporada 2020-2021 (conjunto de datos mayor que el anterior), que puedes encontrar en https://www.football-data.co.uk/germanym.php
-
 Descargando los archivos
 ```R
 setwd("C:\\soccer") # Establezca primero un directorio de trabajo
@@ -88,3 +85,6 @@ p <- ggplot(g, aes(x=Num_Ap, y=Capital)) + geom_line( color="purple") + geom_poi
         axis.text.y = element_text(face = "bold", color="blue" , size = 10, angle = 25, hjust = 1))  # color, Ã¡ngulo y estilo de las abcisas y ordenadas 
 p 
 ```
+
+#### Actividad
+Ejecuta el mismo código pero tomando como data frame aquel que tenga los partidos jugados desde la temporada 2010-2011 hasta la temporada 2020-2021 (conjunto de datos mayor que el anterior), que puedes encontrar en https://www.football-data.co.uk/germanym.php
