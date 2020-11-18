@@ -19,7 +19,9 @@
 El siguiente código descarga datos de la temporada 2019-2020 de la bundesliga y estima las probabilidades de los eventos "El equipo de casa gana",  "El equipo visitante gana" y "El resultado es un empate" con base en los momios ofrecidos para estos eventos por una casa de apuestas.
 
 Analiza brevemente el código (no es necesario que comprendas cada detalle, aunque no es difícil). Ejecuta el código y observa el gráfico que muestra los resultados. 
-Por último, ejecuta el mismo código pero tomando como data frame aquel que tenga los partidos jugados desde la temporada 2010-2011 hasta la temporada 2020-2021 que puedes encontrar en https://www.football-data.co.uk/germanym.php
+
+#### Actividad
+Ejecuta el mismo código pero tomando como data frame aquel que tenga los partidos jugados desde la temporada 2010-2011 hasta la temporada 2020-2021 (conjunto de datos mayor que el anterior), que puedes encontrar en https://www.football-data.co.uk/germanym.php
 
 Descargando los archivos
 ```R
@@ -56,21 +58,21 @@ arriesgan la misma cantidad de dinero en cada apuesta
 Bookmaker <- B365 # Consideramos los momios de la casa de apuestas para estimar las probabilidades de los eventos
 
 Bankroll <- 10000 # Capital disponible para apostar
-Historial <- NULL # Este serÃ¡ un vector de resultados (de nuestro capital)
+Historial <- NULL # Este será un vector de resultados (de nuestro capital)
 Stake <- 500 # Cantidad fija a arriesgar cada vez que apostamos
 
 for(j in 1:dim(Bookmaker)[1]){ # Reslizamos una secuencia de apuestas
-  if(max(1/Bookmaker[j,]) > 0.5){ # Apostamos Ãºnicamente cuando la probabilidad mÃ¡s grande entre los 3 eventos de interÃ©s es mayor que 0.5
-    if(which.min(Bookmaker[j,]) == R[j]){ # El evento con la probabilidad mÃ¡s grande, es el evento con el momio mÃ¡s pequeÃ±o 
-      Bankroll <- Bankroll + Stake # Si el evento con la probabilidad mÃ¡s grande y mayor a 0.5 ocurriÃ³, entonces ganamos la apuesta y aumentamos nuestro capital
+  if(max(1/Bookmaker[j,]) > 0.5){ # Apostamos únicamente cuando la probabilidad más grande entre los 3 eventos de interés es mayor que 0.5
+    if(which.min(Bookmaker[j,]) == R[j]){ # El evento con la probabilidad más grande, es el evento con el momio más pequeño 
+      Bankroll <- Bankroll + Stake # Si el evento con la probabilidad más grande y mayor a 0.5 ocurrió, entonces ganamos la apuesta y aumentamos nuestro capital
     } else{
-      Bankroll <- Bankroll - Stake # Si el evento con la probabilidad mÃ¡s grande y mayor a 0.5 no ocurriÃ³, entonces perdemos la apuesta y disminuimos nuestro capital
+      Bankroll <- Bankroll - Stake # Si el evento con la probabilidad más grande y mayor a 0.5 no ocurrió, entonces perdemos la apuesta y disminuimos nuestro capital
     }
-    Historial <- c(Historial, Bankroll) # Guardamos nuestro capital actualizado como Ãºltimo elemento en el vector historial
+    Historial <- c(Historial, Bankroll) # Guardamos nuestro capital actualizado como último elemento en el vector historial
   }
 }
 
-g <- data.frame(Num_Ap = 1:length(Historial), Capital = Historial) # Formamos un data frame con una columna que indica el nÃºmero de apuesta y otra que indica el capital despuÃ©s de cada apuesta
+g <- data.frame(Num_Ap = 1:length(Historial), Capital = Historial) # Formamos un data frame con una columna que indica el número de apuesta y otra que indica el capital después de cada apuesta
 
 ```
 
