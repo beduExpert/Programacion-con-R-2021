@@ -23,7 +23,7 @@ Por último, ejecuta el mismo código pero tomando como data frame aquel que ten
 
 Descargando los archivos
 ```R
-setwd("C:\\Users\\Jenner\\Desktop\\soccer") # Establezca primero un directorio de trabajo
+setwd("C:\\soccer") # Establezca primero un directorio de trabajo
 url <- "https://www.football-data.co.uk/mmz4281/1920/D1.csv"
 download.file(url = url, destfile = "Bundesliga1.csv", mode = "wb")
 
