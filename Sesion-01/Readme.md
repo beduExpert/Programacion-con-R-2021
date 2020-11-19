@@ -22,12 +22,14 @@ Identificar las nociones básicas para poder manipular DataSets, poder realizar 
 - [Ejemplo 5](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Ejemplo-05) Instalar packages y leerlos.
 - [Ejemplo 6](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Ejemplo-06) Loops y pseudocódigo: For, if-else
 
-##### Retos de la sesión 1.
+##### Retos de la sesión 1. 
 
 - [Reto 1: Lectura y escritura de datos](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Reto-01)
 - [Reto 2: Loops](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Reto-02)
-- [Reto 3](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Reto-03)
+- [Reto 3: Operaciones con data frames](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Reto-03)
 
 #### Postwork de la sesión
 
 - [Postwork](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Postwork)
+
+
