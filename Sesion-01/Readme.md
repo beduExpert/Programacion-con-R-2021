@@ -24,8 +24,8 @@ Identificar las nociones básicas para poder manipular DataSets, poder realizar 
 
 ##### Retos de la sesión 1.
 
-- [Reto 1](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Reto-01)
-- [Reto 2](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Reto-02)
+- [Reto 1: Lectura y escritura de datos](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Reto-01)
+- [Reto 2: Loops](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Reto-02)
 - [Reto 3](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-01/Reto-03)
 
 #### Postwork de la sesión
