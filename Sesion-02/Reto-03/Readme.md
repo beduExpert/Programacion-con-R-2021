@@ -1,4 +1,4 @@
-# Reto 3.
+# Reto 3. Lectura de datos y usos de `dplyr`
 
 #### Objetivo
 
