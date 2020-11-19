@@ -1,4 +1,4 @@
-# Reto 1.
+# Reto 1. Medidas de tendencia central
 
 #### Objetivo
 
