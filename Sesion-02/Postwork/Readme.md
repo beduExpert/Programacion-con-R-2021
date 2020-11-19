@@ -73,7 +73,7 @@ g <- data.frame(Num_Ap = 1:length(Historial), Capital = Historial) # Formamos un
 
 ```
 
-# Graficamos nuestros resultados
+#### Graficamos nuestros resultados
 
 ```R
 p <- ggplot(g, aes(x=Num_Ap, y=Capital)) + geom_line( color="purple") + geom_point() +
@@ -86,5 +86,5 @@ p <- ggplot(g, aes(x=Num_Ap, y=Capital)) + geom_line( color="purple") + geom_poi
 p 
 ```
 
-#### Actividad
+## Actividad
 Ejecuta el mismo código pero tomando como data frame aquel que tenga los partidos jugados desde la temporada 2010-2011 hasta la temporada 2020-2021 (conjunto de datos mayor que el anterior), que puedes encontrar en https://www.football-data.co.uk/germanym.php
