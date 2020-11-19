@@ -77,14 +77,14 @@ g <- data.frame(Num_Ap = 1:length(Historial), Capital = Historial) # Formamos un
 
 ```R
 p <- ggplot(g, aes(x=Num_Ap, y=Capital)) + geom_line( color="purple") + geom_point() +
-  labs(x = "NÃºmero de Apuesta", 
+  labs(x = "Número de Apuesta", 
        y = "Capital",
        title = "Realizando una secuencia de apuestas") +
   theme(plot.title = element_text(size=12))  +
   theme(axis.text.x = element_text(face = "bold", color="blue" , size = 10, angle = 25, hjust = 1),
-        axis.text.y = element_text(face = "bold", color="blue" , size = 10, angle = 25, hjust = 1))  # color, Ã¡ngulo y estilo de las abcisas y ordenadas 
+        axis.text.y = element_text(face = "bold", color="blue" , size = 10, angle = 25, hjust = 1))  # color, ángulo y estilo de las abcisas y ordenadas 
 p 
 ```
 
 ## Actividad
-Ejecuta el mismo código pero tomando como data frame aquel que tenga los partidos jugados desde la temporada 2010-2011 hasta la temporada 2020-2021 (conjunto de datos mayor que el anterior), que puedes encontrar en https://www.football-data.co.uk/germanym.php
+Ahora te toca ejecutar el mismo código, sin embargo ahora deberas generar un data frame que tenga los partidos jugados desde la temporada 2010-2011 hasta la temporada 2020-2021 (observa que este conjunto de datos es de mayor dimensión que el anterior), los datos podrás localizarlos en el siguiente link: https://www.football-data.co.uk/germanym.php
