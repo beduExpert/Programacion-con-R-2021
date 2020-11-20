@@ -67,7 +67,7 @@ if(<condition1>) {
 ```
 Ejemplo
 ```R
-x <- runif(1, 0, 10) ## creamos un nro aleatorio entre 0 y 10
+x <- runif(1, 0, 10) ## creamos un número aleatorio entre 0 y 10
 if(x > 5) {
   y <- TRUE
 } else {
