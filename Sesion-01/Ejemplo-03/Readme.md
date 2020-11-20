@@ -25,12 +25,12 @@ milista <- list(nombre = "Pepe", no.hijos = 3, edades.hijos = c(4, 7, 9))
 ```R
 str(milista)
 ```
-Extrayendo elementos de la lista
+Extrayendo elementos de la lista, recuerda que para ingresar se debe usar el símbolo `$` 
 ```
 milista$nombre
 ```
 
-###DATA FRAMES
+Creando data frames
 ```R
 x <- 6:8
 y <- c("A", "B", "C")
