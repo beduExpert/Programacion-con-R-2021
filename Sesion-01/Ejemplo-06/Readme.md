@@ -50,7 +50,7 @@ if(<condicion>) {
   ## bloque de código
 }
 
-## Continue with rest of code
+## Continua con el resto del código
 if(<condicion>) {
   ## bloque de código
 } else {
