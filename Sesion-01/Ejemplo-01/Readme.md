@@ -13,22 +13,29 @@
 ## Desarrollo
 Se tiene una serie de códigos los cuales deberán irse corriento línea a línea, recordar que siempre se ejecuta una línea presionando **Ctrl + Enter**
 
+Primero vamos a crear algunas variables de diferentes tipos: 
 ``` R
 var.hola <- "Hola Mundo"
 var.number <- 5
 var.double <- 2.7076
 var.logical <- T
 vector <- c(1,2)
+```
 
+Ahora con el comando `class()` veremos la tipología de las variables
+```R
 class(var.number)
 class(var.hola)
 class(var.double)
 class(var.logical)
-
+```
+OBserva que diferencia hay entre `clas()` y `typeof()` 
+```R
 typeof(vector)
 typeof(var.number)
 ``` 
-Crear vectores 
+
+En este paso vamos a crear vectores, siempre serán de la forma `c(elem1, elem2, ...)`
 
 ``` R
 a <- c(4, 6, 8, 10,12)
@@ -47,7 +54,7 @@ a[1]
 b[4]
 ```
 
-Unir 2 vectores 
+Para unir 2 vectores 
 ```R 
 c(a,b)
 ```
@@ -92,7 +99,7 @@ Reciclaje, al hacer operaciones entre vectores, R repetirá los valores del vect
 c(1, 2) + c(7, 8, 9, 10)
 ```
 
-Operaciones entre vectores
+Existen varias operaciones entre vectores, intenta probar algunas de las siguientes: 
 ```R
 a + b     
 a - b     
