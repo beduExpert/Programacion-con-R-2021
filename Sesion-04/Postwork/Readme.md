@@ -31,9 +31,9 @@ estamos interesados en contrastar las hipótesis H0: mu1 - mu2 = 0 *vs* H1: mu1 
 3. Lleve a cabo la prueba con la función `t.test`
 
 Quiz
-Suponga que realiza un examen de opción múltiple con 30 preguntas, en donde cada pregunta tiene 5 posibles respuestas, pero solo una es correcta siempre. Si elige la respuesta al azar en cada pregunta, y estamos interesados en el número de respuestas correctas obtenidas al final ¿Podemos decir que estamos ante un experimento binomial?
 
-Dada una muestra aleatoria X1, X2, …, Xn de una población con media  y varianza 2 finitas, ¿Podemos saber cómo se distribuye aproximadamente la variable aleatoria (X-μ)/(σ/√n)? 
-Justifique su respuesta.
+1. Suponga que realiza un examen de opción múltiple con 30 preguntas, en donde cada pregunta tiene 5 posibles respuestas, pero solo una es correcta siempre. Si elige la respuesta al azar en cada pregunta, y estamos interesados en el número de respuestas correctas obtenidas al final ¿Podemos decir que estamos ante un experimento binomial?
 
-Consulte en diferentes fuentes cuando consideramos que una muestra es grande o pequeña cuando llevamos a cabo contrastes de hipótesis.
+2. Dada una muestra aleatoria X1, X2, …, Xn de una población con media  y varianza 2 finitas, ¿Podemos saber cómo se distribuye aproximadamente la variable aleatoria (X-μ)/(σ/√n)?  Justifique su respuesta.
+
+3. Consulte en diferentes fuentes cuando consideramos que una muestra es grande o pequeña cuando llevamos a cabo contrastes de hipótesis.
