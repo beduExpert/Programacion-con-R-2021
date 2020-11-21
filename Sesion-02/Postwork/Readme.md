@@ -1,6 +1,3 @@
-
-
-
 ## Postwork: Pronóstico de resultados de fútbol 
 
 ### OBJETIVO
@@ -88,3 +85,16 @@ p
 
 ## Actividad
 Ahora te toca ejecutar el mismo código, sin embargo ahora deberas generar un data frame que tenga los partidos jugados desde la temporada 2010-2011 hasta la temporada 2020-2021 (observa que este conjunto de datos es de mayor dimensión que el anterior), los datos podrás localizarlos en el siguiente link: https://www.football-data.co.uk/germanym.php
+
+Quiz
+1. ¿Cuál es la media y la mediana del siguiente conjunto de datos?
+
+195, 198, 199, 205, 212, 204, 202
+
+2. ¿Cuál es el mínimo valor que puede tomar la varianza y bajo qué condición
+se alcanza este mínimo valor?
+
+3. Encuentre el rango intercuartílico para el conjunto de datos cuyos cuartiles
+son los siguientes:
+
+Primer cuartil: 198.5, Segundo Cuartil: 202, Tercer cuartil: 204.5
