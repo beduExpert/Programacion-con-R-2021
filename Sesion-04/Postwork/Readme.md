@@ -11,21 +11,8 @@
 
 # Desarrollo
 
-#### Contraste de cola superior para mu1 - mu2
+Ahora realizarás un procedimiento denominado bootstrap, el cual consiste en realizar reemplazos de las muestras, revisa bibliografía en internet para que tengas nociones de este desarrollo. Esto es útil siempre que se quiere garantizar la aleatoriedad de una muestra. 
 
-Dadas dos muestras aleatorias independientes de tamaño n1 = 8 y n2 = 9 de la distribución normal con sigma1 = sigma2
+1. Ya hemos estimado las probabilidades conjuntas de que el equipo de casa anote X=x goles (x=0,1,,8), y el equipo visitante anote Y=y goles (y=0,1,,6), en un partido. Obtén una tabla de cocientes al dividir estas probabilidades conjuntas por el producto de las probabilidades marginales correspondientes.
 
-```R
-set.seed(666)
-m1 <- rnorm(n = 8, mean = 100, sd = 5)
-tail(as.data.frame(m1), 1)
-m2 <- rnorm(n = 9, mean = 85, sd = 5)
-tail(as.data.frame(m2), 1)
-100 - 85 # diferencia real de medias
-```
-
-estamos interesados en contrastar las hipótesis H0: mu1 - mu2 = 0 *vs* H1: mu1 - mu2 > 0 (contraste de cola superior).
-
-1. Decida si rechazar o no la hipótesis nula si el nivel de significancia es alpha = 0.05
-2. Obtenga el p-value de la prueba
-3. Lleve a cabo la prueba con la función `t.test`
+2. Mediante un procedimiento de boostrap, obtén más cocientes similares a los obtenidos en la tabla del punto anterior. Esto para tener una idea de las distribuciones de la cual vienen los cocientes en la tabla anterior. Menciona en cuáles casos le parece razonable suponer que los cocientes de la tabla en el punto 1, son iguales a 1 (en tal caso tendríamos independencia de las variables aleatorias X y Y).
