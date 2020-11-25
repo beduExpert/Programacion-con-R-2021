@@ -5,25 +5,30 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Realizar descarga de archivos desde internet
+- Caracterizar data frames
+- Generar nuevos data frames
+
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. R, RStudio
+2. Haber realizado el prework, postwork y seguir el curso de los ejemplos de la sesión
+3. Curiosidad por investigar nuevos tópicos y funciones de R
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Ahora se realiza la parte de graficación para esta parte del postwork, para visualizar las anotaciones de diversos equipos, esto es útil par darse cuenta del desempeño de cada equipo.
 
-<details>
+1. Con el último data frame obtenido en el postwork de la sesión 2, elabora tablas de frecuencias relativas para estimar las siguientes probabilidades:
+ -La probabilidad (marginal) de que el equipo que juega en casa anote x goles (x=0,1,2,)
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+-La probabilidad (marginal) de que el equipo que juega en casa anote y goles (y=0,1,2,)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agreges al menos una)
+- La probabilidad (conjunta) de que el equipo que juega en casa anote x goles y el equipo que juega como visitante anote y goles (x=0,1,2,, y=0,1,2,)
 
-![imagen](https://picsum.photos/200/300)
+2. Realiza lo siguiente:
 
-
+- Un gráfico de barras para las probabilidades marginales estimadas del número de goles que anota el equipo de casa
+- Un gráfico de barras para las probabilidades marginales estimadas del número de goles que anota el equipo visitante.
+- Un HeatMap para las probabilidades conjuntas estimadas de los números de goles que anotan el equipo de casa y el equipo visitante en un partido.
