@@ -9,54 +9,19 @@ El Postwork tiene como objetivo que practiques los comandos básicos aprendidos 
 - Haber realizado los ejercicios durante la sesión
 
 ### Desarrollo
-Al igual que durante las sesiones y en los retos, hay que revisar y ejecutar el siguiente código, se retomarán conocimientos de los ejercicios hechos y de los retos.
 
-Comienza leyendo el siguiente repositorio el cual contiene datos sobre la elección de 2020 en USA, se encuentra en el siguiente link https://raw.githubusercontent.com/ecoronadoj/Sesion_1/main/Data/governors_county_candidate.csv
+Recuerda que la programación es como un deporte en el que se debe practicar, habrá caídas, pero lo importante es levantarse y seguir adelante. ¡Éxito!
+El siguiente postwork, te servirá para ir desarrollando habilidades como si se tratara de un proyecto que evidencie el progreso del aprendizaje durante el módulo, sesión a sesión se irá desarrollando. A continuación aparecen una serie de objetivos que deberás cumplir, es un ejemplo real de aplicación y tiene que ver con datos referentes a equipos de la liga española de fútbol (recuerda que los datos provienen siempre de diversas naturalezas), en este caso se cuenta con muchos datos que se pueden aprovechar explotarlos y generar análisis interesantes que se pueden aplicar a otras áreas. Siendo así damos paso a las instrucciones: 
 
-Cargamos las librerías necesarias y se lee el archivo **.csv**, desde el repositorio
+1. Importa los datos de soccer de la temporada 2019/2020 de la primera división de la liga española a R, los datos los puedes encontrar en el siguiente enlace: https://www.football-data.co.uk/spainm.php
 
-```R
-library(dplyr)
+2. Del data frame que resulta de importar los datos a R, extrae las columnas que contienen los números de goles anotados por los equipos que jugaron en casa (FTHG) y los goles anotados por los equipos que jugaron como visitante (FTAG)
 
-candidates <- read.csv("../Sesiones/archive/governors_county_candidate.csv")
-```
-Se obtienen algunos datos de interés para comenzar el análisis exploratorio
+3. Consulta cómo funciona la función table en R al ejecutar en la consola ?table
+ 
+Posteriormente elabora tablas de frecuencias relativas para estimar las siguientes probabilidades:
 
-```R
-dim(candidates)
-summary(candidates)
-str(candidates)
-```
+- La probabilidad (marginal) de que el equipo que juega en casa anote x goles (x=0,1,2,)
+- La probabilidad (marginal) de que el equipo que juega en casa anote y goles (y=0,1,2,)
+- La probabilidad (conjunta) de que el equipo que juega en casa anote x goles y el equipo que juega como visitante anote y goles (x=0,1,2,, y=0,1,2,)
 
-Se puede hacer un poco más sencilla la lectura, agregando una columna que sea **votes/1000** para que sea el número de votos por 1000
-```R
-candidates <- candidates %>% mutate( votes_x1000 = votes/1000)
-```
-
-Ahora se agrupará por estado y se obtendrá la suma de votos por cada uno de ellos, y al final se organizarán en orden alfabético 
-
-```R
-names(candidates)
-candidates %>% 
-  group_by(state) %>%
-  summarise(votes_state = sum(votes)) %>%
-  arrange(state)
-```
-
-También se puede obtener el número de votos por partido y organizlo por menor número de votos a mayor.
-```R
-candidates %>% 
-  group_by(party) %>%
-  summarise(votes_party = sum(votes)) %>%
-    arrange(votes_party)
-```
-
-Podemos realizar una gráfica por cada partido y cuántos votos obtuvo, de esta manera visualizar los resultados
-
-```R
-install.packages("ggplot")
-library(ggplot2)
-
-ggplot(party.v) + 
-       geom_point(aes(x= party , y = votes_party, colour = party))
- ```
