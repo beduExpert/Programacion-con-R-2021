@@ -13,9 +13,9 @@ En esta sesión estudiaremos temas relacionados con los siguientes puntos
 
 #### Ejemplos:
 
-- [Ejemplo 1]() Regresión lineal simple
-- [Ejemplo 2]() Regresión lineal múltiple
-- [Ejemplo 3]() Máquinas de vectores de soporte
+- [Ejemplo 1](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-05/Ejemplo-01) Regresión lineal simple
+- [Ejemplo 2](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-05/Ejemplo-02) Regresión lineal múltiple
+- [Ejemplo 3](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-05/Ejemplo-02) Máquinas de vectores de soporte
 
 #### Retos de la sesión 5:
 
