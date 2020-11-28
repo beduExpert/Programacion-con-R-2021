@@ -1,16 +1,25 @@
+# Sesion 6. Series de tiempo.
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
+#### Objetivo
 
-## Titulo de la Sesion 
+Obtener predicciones de ventas, de la demanda de productos o servicios, que ayuden a las organizaciones a ajustar presupuestos, justificar decisiones de marketing, o tener un mejor conocimiento sobre la evolución del negocio.
 
-### OBJETIVOS 
+En esta sesión estudiaremos temas relacionados con los siguientes puntos:
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Datos que provienen de una variable que es medida secuencialmente en el tiempo durante o en un intervalo fijo (series de tiempo)
+- Análisis de series de tiempo y ajustes de modelos para entender el pasado y predecir el futuro
 
-#### ORGANIZACION DE LA CLASE 
+#### Los ejemplos de esta sesión 6 son los siguientes:
 
-- Tema que veran en el ejemplo
+- [Ejemplo 1]() Ejemplos de series de tiempo y técnicas descriptivas
+- [Ejemplo 2]() Modelos estocásticos básicos, modelos estacionarios y predicción
+- [Ejemplo 3]() Modelos no estacionarios y predicción
 
-	- [Ejemplo 01](Ejemplo-01)
-	- [Reto 01](Reto-01)
+#### Retos de la sesión 6:
 
+- [Reto 1]()
+- [Reto 2]()
+
+#### Postwork de la sesión 6
+
+- [Postwork]()
