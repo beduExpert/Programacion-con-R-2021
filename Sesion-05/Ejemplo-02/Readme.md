@@ -15,11 +15,11 @@ Supongamos que queremos emprender un negocio o que se nos colicita un estudio en
 
 Entonces primero vamos a analizar los datos de encuestas de clientes de 168 restaurantes Italianos en el área deseada que están disponibles, los cuales tienen las siguientes variables de estudio:
 
-Y: Price (Precio): el precio (en USD) de la cena
-X1: Food: Valuación del cliente de la comida (sacado de 30)
-X2: Décor: Valuación del cliente de la decoración (sacado de 30)
-X3: Service: Valuación del cliente del servicio (sacado de 30)
-X4: East: variable dummy: 1 (0) si el restaurante está al este (oeste) de la quinta avenida
+- Y: Price (Precio): el precio (en USD) de la cena
+- X1: Food: Valuación del cliente de la comida (sacado de 30)
+- X2: Décor: Valuación del cliente de la decoración (sacado de 30)
+- X3: Service: Valuación del cliente del servicio (sacado de 30)
+- X4: East: variable dummy: 1 (0) si el restaurante está al este (oeste) de la quinta avenida
 
 Primero debemos establecer nuestro directorio de trabajo y el archivo de datos (nyc.csv) que importaremos a R deberá de estar en este directorio.
 
