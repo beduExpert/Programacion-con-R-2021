@@ -10,7 +10,7 @@
  - [Sesión 3: Análisis Exploratorio de Datos (AED o EDA) con R](Sesion-03/Readme.md)
  - [Sesión 4: Algunas distribuciones, teorema central del límite y contraste de hipótesis](Sesion-04/Readme.md) 
  - [Sesión 5: Regresión lineal y clasificación](Sesion-05/Readme.md) 
- - [Sesión 6: Series de tiempo](Sesion-06/Readme.md): 
+ - [Sesión 6: Series de tiempo](Sesion-06/Readme.md)
  - [Sesión 7](): 
  - [Sesión 8]():
 
