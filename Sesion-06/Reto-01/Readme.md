@@ -1,8 +1,5 @@
  
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Series de tiempo
+## Reto 1. Series de tiempo
 
 ### OBJETIVO 
 
