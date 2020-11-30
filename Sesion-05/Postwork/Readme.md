@@ -1,19 +1,17 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+# Postwork Sesión 5
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Continuar con el desarrollo del postwork, en esta ocasión se utiliza la función `predict` para realizar una predicción en los resultados de los equipos
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+- Haber desarrollado los postworks anteriores
+- Cubrir los temas del prework
+- Repicar los ejemplos de la sección 
 
 #### DESARROLLO
-
-# Postwork Sesión 5
 
 1. A partir del conjunto de datos de soccer de la liga española de las temporadas 2017/2018, 2018/2019 y 2019/2020, creé el data frame `SmallData`, que contenga las columnas `date`, `home.team`, `home.score`, `away.team` y `away.score`; esto lo puede hacer con ayuda de la función `select` del paquete `dplyr`. Luego establezca un directorio de trabajo y con ayuda de la función `write.csv` guarde el data frame como un archivo csv con nombre *soccer.csv*. Puede colocar como argumento `row.names = FALSE` en `write.csv`. 
 
