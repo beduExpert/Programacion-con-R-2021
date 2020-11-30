@@ -17,8 +17,8 @@ En esta sesión estudiaremos temas relacionados con los siguientes puntos:
 
 #### Retos de la sesión 6:
 
-- [Reto 1]()
-- [Reto 2]()
+- [Reto 1](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-06/Reto-01)
+- [Reto 2](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-06/Reto-02)
 
 #### Postwork de la sesión 6
 
