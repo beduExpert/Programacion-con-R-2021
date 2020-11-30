@@ -19,7 +19,7 @@ En esta sesión estudiaremos temas relacionados con los siguientes puntos
 
 #### Retos de la sesión 5:
 
-- [Reto 1](Regresión lineal simple)
+- [Reto 1: Regresión lineal simple](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-05/Reto-01)
 - [Reto 2]()
 
 #### Postwork de la sesión 5:
