@@ -1,29 +1,23 @@
- 
+Reto 1. Regresión lineal 
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+#### OBJETIVO 
 
-### OBJETIVO 
-
-- Lo que esperamos que el alumno aprenda 
+- Verificar si existe una relación entre dos variables cuantitativas mediante el uso de regresiones lineales utilizando gráficas que puedan determinar a naturaleza de los datos hablando en términos de su distribción muestral. 
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+- Haber cubierto los temas en el prework
+- Realizar los ejemplos
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Se cree que entre las variables x y y del archivo csv adjunto, podría haber una relación más o menos lineal, se se sabe la naturaleza de los datos, sin embargo esto ocurre frecuentemente, saber si se puede establecer relación para su posterior estudio o análisis. Para tener más evidencia sobre esto lleve a cabo lo siguiente:
 
-<details>
+1. Cargar el fichero de los datos `csv`
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+2. Realice el gráfico de dispersión de los datos
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+3. Ajuste un modelo de regresión lineal simple a los datos, muestre un resumen del modelo ajustado y trace la recta de regresión estimada junto con el gráfico de dispersión
 
-![imagen](https://picsum.photos/200/300)
+4. Obtenga algunas gráficas de diagnóstico (por ejemplo boxplot, histograma), y diga si es razonable suponer para los errores aleatoriedad, normalidad y varianza constante.
 
