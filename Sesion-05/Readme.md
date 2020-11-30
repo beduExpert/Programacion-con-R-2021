@@ -24,4 +24,4 @@ En esta sesión estudiaremos temas relacionados con los siguientes puntos
 
 #### Postwork de la sesión 5:
 
-- [Postwork]()
+- [Postwork](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-05/Postwork)
