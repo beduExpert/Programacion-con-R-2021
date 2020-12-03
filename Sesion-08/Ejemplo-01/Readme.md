@@ -94,3 +94,5 @@ shinyServer(function(input, output) {
                                     }
             )
 ```
+
+Ejecula la webApp y observa el resultado que se generó con el dódigo, ¿Qué otros escenarios se te ocurren?
