@@ -1,29 +1,20 @@
- 
+# Reto 3. Simulación de un proceso ARIMA(1, 1, 1)
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+#### Objetivo
 
-### OBJETIVO 
+- Observar algunas características de los residuales cuando llevamos a cabo el ajuste de un modelo "adecuado" y realizar algunas predicciones con el modelo encontrado.
 
-- Lo que esperamos que el alumno aprenda 
+#### Requisitos
 
-#### REQUISITOS 
+- Tener instalado R y RStudio
+- Haber trabajado con el Prework y el Work 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+# Desarrollo
 
-#### DESARROLLO
+1. Simule n = 1000 valores de un proceso ARIMA(1, 1, 1) con parámetros ar = 0.6 y ma = 0.2
 
-Agrega las instrucciones generales del ejemplo o reto
+2. Ajuste un modelo Arima a la serie simulada para estimar los parámetros y observe las estimaciones de los parámetros
 
-<details>
+3. Obtenga el correlograma de los residuales del ajuste
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
+4. Realice tres predicciones con ayuda del modelo ajustado y la función `predict`
