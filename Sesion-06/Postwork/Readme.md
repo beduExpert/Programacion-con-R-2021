@@ -1,29 +1,23 @@
+# Postwork Sesión 6. 
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+#### Objetivo
 
-## Titulo del Ejemplo
+- Aprender a crear una serie de tiempo en `R`
 
-### OBJETIVO
+#### Requisitos
 
-- Lo que esperamos que el alumno aprenda
+- Tener instalado R y RStudio
+- Haber trabajado con el Prework y el Work
 
-#### REQUISITOS
+#### Desarrollo
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+Importe el conjunto de datos match.data.csv a `R` y realice lo siguiente:
 
-#### DESARROLLO
+1. Agregue una nueva columna `sumagoles` que contenga la suma de goles por partido
 
-Agrega las instrucciones generales del ejemplo o reto
+2. Obtenga el promedio por mes de la suma de goles
 
-<details>
+3. Creé la serie de tiempo del promedio por mes de la suma de goles hasta diciembre de 2019
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agreges al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
+4. Grafique la serie de tiempo
 
