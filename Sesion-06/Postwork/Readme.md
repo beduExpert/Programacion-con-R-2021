@@ -11,13 +11,13 @@
 
 #### Desarrollo
 
-Importe el conjunto de datos match.data.csv a `R` y realice lo siguiente:
+Importa el conjunto de datos match.data.csv a `R` y realice lo siguiente:
 
-1. Agregue una nueva columna `sumagoles` que contenga la suma de goles por partido
+1. Agrega una nueva columna `sumagoles` que contenga la suma de goles por partido.
 
-2. Obtenga el promedio por mes de la suma de goles
+2. Obtén el promedio por mes de la suma de goles.
 
-3. Creé la serie de tiempo del promedio por mes de la suma de goles hasta diciembre de 2019
+3. Crea la serie de tiempo del promedio por mes de la suma de goles hasta diciembre de 2019.
 
-4. Grafique la serie de tiempo
+4. Grafica la serie de tiempo.
 
