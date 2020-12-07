@@ -15,9 +15,9 @@ Se cree que entre las variables x y y del archivo csv adjunto, podría haber una
 
 1. Cargar el fichero de los datos `csv`
 
-2. Realice el gráfico de dispersión de los datos
+2. Realiza el gráfico de dispersión de los datos
 
-3. Ajuste un modelo de regresión lineal simple a los datos, muestre un resumen del modelo ajustado y trace la recta de regresión estimada junto con el gráfico de dispersión
+3. Ajusta un modelo de regresión lineal simple a los datos, muestre un resumen del modelo ajustado y trace la recta de regresión estimada junto con el gráfico de dispersión
 
-4. Obtenga algunas gráficas de diagnóstico (por ejemplo boxplot, histograma), y diga si es razonable suponer para los errores aleatoriedad, normalidad y varianza constante.
+4. Obtén algunas gráficas de diagnóstico (por ejemplo boxplot, histograma), y diga si es razonable suponer para los errores aleatoriedad, normalidad y varianza constante.
 
