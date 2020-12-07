@@ -10,7 +10,7 @@
 
 #### Desarrollo
 
-Considere el data frame `mtcars` de `R` y utilice las funciones: 
+Considera el data frame `mtcars` de `R` y utiliza las funciones: 
 - `str`
 - `summary`
 - `head` 
