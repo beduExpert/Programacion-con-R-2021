@@ -20,6 +20,6 @@ tail(as.data.frame(muestra))
 
 estamos interesados en contrastar las hipótesis H0: mu = 120 *vs* H1: mu < 120 (contraste de cola inferior).
 
-1. Decida si rechazar o no la hipótesis nula si el nivel de significancia es alpha = 0.05
-2. Obtenga el p-value de la prueba
-3. Lleve a cabo la prueba con la función `t.test`
+1. Decide si rechazar o no la hipótesis nula si el nivel de significancia es alpha = 0.05
+2. Obtén el p-value de la prueba
+3. Lleva a cabo la prueba con la función `t.test`
