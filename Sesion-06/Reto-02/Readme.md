@@ -12,10 +12,10 @@
 
 #### DESARROLLO
 
-1. Realice la siguiente simulación con las siguientes características: n = 1000 valores de un proceso ARIMA(1, 1, 1) con parámetros ar = 0.6 y ma = 0.2
+1. Realiza la siguiente simulación con las siguientes características: n = 1000 valores de un proceso ARIMA(1, 1, 1) con parámetros ar = 0.6 y ma = 0.2
 
-2. Ajuste un modelo Arima a la serie simulada para estimar los parámetros y observe las estimaciones de los parámetros
+2. Ajusta un modelo Arima a la serie simulada para estimar los parámetros y observe las estimaciones de los parámetros
 
-3. Obtenga el correlograma de los residuales del ajuste
+3. Obtén el correlograma de los residuales del ajuste
 
-4. Realice tres predicciones con ayuda del modelo ajustado y la función `predict`
+4. Realiza tres predicciones con ayuda del modelo ajustado y la función `predict`
