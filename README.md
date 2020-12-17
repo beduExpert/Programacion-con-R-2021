@@ -12,7 +12,7 @@
  - [Sesión 5: Regresión lineal y clasificación](Sesion-05/Readme.md) 
  - [Sesión 6: Series de tiempo](Sesion-06/Readme.md)
  - [Sesión 7](): 
- - [Sesión 8]():
+ - [Sesión 8](Dashboards con Shiny - Entorno GUI):
 
 
  
