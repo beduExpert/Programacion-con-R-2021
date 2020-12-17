@@ -1,4 +1,4 @@
-# Ejemplo 6. Publicar tu dashboard 
+# Ejemplo 6. Publica tu dashboard 
 
 #### Objetivo 
 Realizar la publicación de tu dashboard dentro de un servidor ya sea de Shiny o de RStudio, para poder compartirlo a traves de internet y que los que tengan el link puedan hacer uso del dashboard
