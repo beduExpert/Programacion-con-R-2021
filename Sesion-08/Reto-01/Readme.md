@@ -1,29 +1,19 @@
- 
+# Reto 1. Crear un Dashboard con pestañas
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+#### Objetivo 
+Repasar los conceptos de los ejemplos de la sesión para desarrollar un dashboard simple
 
-### OBJETIVO 
+#### Requisitos
+- Shiny
+- Haber realizado los ejercicios de la sesión
 
-- Lo que esperamos que el alumno aprenda 
+#### Desarrollo
+Basandote en los ejemplos genera el dashboard con el dataset de `iris` en el que se muestre por pestañas: 
 
-#### REQUISITOS 
+- El gráfico de dispersión de las variables numéricas
+- La imagen generada por un diagrama de gradiente de la correlación entre las variables del dataset 
+- EL summary del dataset
+- La tabla del dataset 
+- Un data table del dataset en el que se muestren 10, 20 y 50 entradas por página
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
-
-#### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
+Ajusta lo que se requiera para que obtengas el resultado deseado a los ejemplos de la sesión.
