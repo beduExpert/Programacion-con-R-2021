@@ -6,6 +6,7 @@
 #### Requisitos
 - Libreria `dplyr`
 - Libreria `pool`
+. Libreria `DBI`
 
 #### Desarrollo
 
@@ -41,4 +42,27 @@ my_db %>% tbl("Country") %>% head(5)
 # Obtener los primeros 5 registros de CountryLanguage
 
 my_db %>% tbl("CountryLanguage") %>% head(5)
+```
+
+Otra forma de generar una busqueda será con la libreria `DBI`, utilizando el comando  `dbSendQuery`
+
+```R
+library(DBI)
+conn <- dbConnect(
+  drv = RMySQL::MySQL(),
+  dbname = "shinydemo",
+  host = "shiny-demo.csa7qlmguqrf.us-east-1.rds.amazonaws.com",
+  username = "guest",
+  password = "guest")
+
+rs <- dbSendQuery(conn, "SELECT * FROM City LIMIT 5;")
+
+dbFetch(rs)
+``` 
+![](querie.jpg)
+
+Para finalizar nos desconectamos de la BDD
+```R
+dbClearResult(rs)
+dbDisconnect(conn)
 ```
