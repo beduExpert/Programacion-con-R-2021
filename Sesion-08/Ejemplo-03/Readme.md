@@ -1,28 +1,83 @@
+# Ejemplo 3. Dashboard dinámico
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+#### Objetivo
+- Crear un dashboard de tipo dinámico utilizando gráficas de tipo histograma además de seleccionar las variables mediante botones.
 
-## Titulo del Ejemplo
+#### Requisitos
+- Utileria shiny
+- Generar un archivo de tipo Shiny webApp
+- Conocimiento de data frames
 
-### OBJETIVO
+#### Desarrollo
 
-- Lo que esperamos que el alumno aprenda
+Generar la Shiny webApp y dentro del archivo `ui.R` pegar el siguiente código
 
-#### REQUISITOS
+```R
+# Generación de un dashboard de tipo de selección Dinámica
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+library(shiny)
 
-#### DESARROLLO
+# Define UI for application that draws a histogram
+shinyUI(fluidPage(
 
-Agrega las instrucciones generales del ejemplo o reto
+    # Application title
+    titlePanel("Elecciones dinámicas de Data Frames"),
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+    # Sidebar with a slider input for number of bins
+    sidebarLayout(
+        sidebarPanel(
+            selectInput("dataset", "Selección del dataset", 
+                        c("mtcars", "rock", "iris")), 
+            uiOutput("var")
+        ),
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+        # Show a plot of the generated distribution
+        mainPanel(plotOutput("plot")
+        )
+    )
+))
+```
 
-![imagen](https://picsum.photos/200/300)
+Para el archivo `Server.R` pega el siguiente código, además trata de identificar que hacen cada uno de los comandos que se presentan a continuación:
 
+```R 
+# Generación de un dashboard de tipo de selección Dinámica
 
+library(shiny)
+
+# Define server logic required to draw a histogram
+shinyServer(function(input, output) {
+
+   datasetImput <- reactive(
+       switch(input$dataset, 
+              "rock" = rock, 
+              "mtcars" = mtcars, 
+              "iris" = iris)
+   )
+
+   output$var <- renderUI({
+       
+       radioButtons("varname", 
+                    "elige una variable", 
+                    names(datasetImput()))
+   })
+   
+   output$plot <- renderPlot({
+       if(!is.null(input$varname)){
+           if(!input$varname %in% names(datasetImput())){
+               colname <- names(datasetImput())[1]
+               
+           } else {
+               colname <- input$varname
+           }
+       hist(datasetImput()[,colname],
+            main = paste("Histograma de", colname), 
+            xlab = colname)
+           }
+       
+   })
+   
+    })
+
+```
+Ejecuta la webApp
