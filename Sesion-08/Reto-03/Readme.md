@@ -1,29 +1,13 @@
- 
+# Reto 3. Generar un dashboard de tipo profesional
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+#### Objetivo
+Desarrollar un dashboar de tipo dinámico, utilizando la libreria `shinydashboard`, en este caso tu elies cual es el conjunto de datos a mostrar y las caracteristicas que quieras añadir, así como las pestañas e íconos que quieras para representar las pestañas o etiquetas. 
 
-### OBJETIVO 
+#### Requisitos
+- Shiny
+- shinydashboard
+- Creatividad
 
-- Lo que esperamos que el alumno aprenda 
+#### Desarrollo 
 
-#### REQUISITOS 
-
-1. Lo necesario para desarrollar el ejemplo o el Reto 
-
-#### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
+Sientete libre de desarrollar tu propio dashboard utilizando el código del [ejemplo 5](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-08/Ejemplo-05) 
