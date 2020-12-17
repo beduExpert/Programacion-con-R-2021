@@ -1,29 +1,19 @@
- 
+# Reto 2. Dashboard Dinámico
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+#### Objetivo
+- Generar un dashboard dinámico que muestre los histogramas para ciertas variables seleccionadas de un datased
 
-### OBJETIVO 
+#### Requisitos
+- Shiny
+- datasets de airquality
+- Haber realizado los ejercicios de la clase
 
-- Lo que esperamos que el alumno aprenda 
+#### Desarrollo
 
-#### REQUISITOS 
+Generar un dashboard dinámico que muestre de manera dinámica los histogramas de las variables 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+- `Ozone`, `Solar.R`, `Wind`, `Temp`, `Month` y `Day`, para el dataset `airquality` 
+- `carat`, `depth` y `price`, para el dataset `diamonds` de la libreria `ggplot2`
+- Desde la columna 4 hasta la 11 del dataset `midwest` de `ggplot2`
 
-#### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
+Hint: Hay que tener presente que para que se realicen los histogramas se deben ingresar data frames
