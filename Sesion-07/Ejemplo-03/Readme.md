@@ -6,7 +6,7 @@
 #### Requisitos
 - Libreria `dplyr`
 - Libreria `pool`
-. Libreria `DBI`
+- Libreria `DBI`
 
 #### Desarrollo
 
