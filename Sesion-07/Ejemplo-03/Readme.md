@@ -1,28 +1,44 @@
+# Ejemplo 3. 
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+#### Objetivo
+- Utilizar la libreria `dplyr` y `pool` para hacer queries a **MySQL**
 
-## Titulo del Ejemplo
+#### Requisitos
+- Libreria `dplyr`
+- Libreria `pool`
 
-### OBJETIVO
+#### Desarrollo
 
-- Lo que esperamos que el alumno aprenda
+Ahora utilizaremos otra opción para realizar queries a una BDD con la ayuda de dplyr que sustituye a `SELECT` en **MySQL**  y el operador `%>%`, hay que recordar que con este comando también podemos realizar busquedas  de forma local. 
 
-#### REQUISITOS
+Comenzamos instalando las paqueterias necesarias y cargándolas a R
+```R
+install.packages("pool")
+install.packages("dbplyr")
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+library(dbplyr)
+library(pool)
+```
+Se realiza la lectura de la BDD con el comando `dbPool`, los demás parámetros se siguen utilizando igual que el ejemplo anterior  
+```R
+my_db <- dbPool(
+  RMySQL::MySQL(), 
+  dbname = "shinydemo",
+  host = "shiny-demo.csa7qlmguqrf.us-east-1.rds.amazonaws.com",
+  username = "guest",
+  password = "guest"
+)
+```
 
-#### DESARROLLO
+Para ver el contenido de la BDD y realizar una busqueda se procede de la siguiente manera
+```R
+dbListTables(my_db)
 
-Agrega las instrucciones generales del ejemplo o reto
+# Obtener los primeros 5 registros de Country
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+my_db %>% tbl("Country") %>% head(5)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+# Obtener los primeros 5 registros de CountryLanguage
 
-![imagen](https://picsum.photos/200/300)
-
-
+my_db %>% tbl("CountryLanguage") %>% head(5)
+```
