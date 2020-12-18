@@ -1,29 +1,12 @@
- 
+# Reto 2. Extracción de tablas en un HTML
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+De la siguiente dirección donde se muestran los sueldos para _Data Scientist_ 
 
-### OBJETIVO 
+(https://www.glassdoor.com.mx/Sueldos/data-scientist-sueldo-SRCH_KO0,14.htm)
 
-- Lo que esperamos que el alumno aprenda 
+- Extraer la tabla del HTML
 
-#### REQUISITOS 
+- Quitar los caracteres no necesarios de la columna sueldos para dejar solamente el número
+- A signar ésta columna como tipo numérico
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
-
-#### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
+¿Cuál es la empresa que más paga y la que menos paga?
