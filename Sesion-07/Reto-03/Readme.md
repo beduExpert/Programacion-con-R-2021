@@ -1,9 +1,9 @@
-# Reto 3
+# Reto 3 Github -> RStudio
 
 
-Del script generado en el reto 2
+Del script que se generó en el reto 2, deberas realizar las siguientes acciones
 
-- Subirlo al github 
+- Tendras que subir el archivo al repositorio en github que se creo _Reto_Sesion_7_ 
 
-- Realizar el `pull` (mandarlo a RStudio) 
+- Ahora realizar el `pull` esto es mandarlo a RStudio Cloud, para poder realizar su manipulación desde la nube  
 
