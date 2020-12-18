@@ -1,4 +1,4 @@
-# Reto 1. 
+# Reto 1. RStudio Cloud -> Github
 
 #### Objetivo
 Practicar como transferir un archivo desde RStudio Cloud hacía Github y viceversa 
