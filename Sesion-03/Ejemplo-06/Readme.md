@@ -79,10 +79,12 @@ boxplot(tsb ~ cycle(tsb), ylim = c(min(tsb), max(tsb) ) )
 ```
 
 Ahora vamos a determinar si el comportamiento en la tendencia es estocástico o no utilizando la prueba de _Dickey-Fuller_
+
+```R
 install.packages("tseries")
 library(tseries)
 
-```R
+
 adf <- adf.test(tsb, alternative ="stationary", k=12)
 ```
 
