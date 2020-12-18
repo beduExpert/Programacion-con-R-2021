@@ -1,16 +1,22 @@
+# Sesion 7. RStudio Cloud - Github, conexiones con BDs y lectura de datos externos
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
 
-## Titulo de la Sesion 
+#### Durante el transcurso de esta sesión serás capaz de desarrollar las siguientes capacidades de R 
 
-### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+##### Aquí encontraras los ejemplos de la sesión 1.
 
-#### ORGANIZACION DE LA CLASE 
+- [Ejemplo 1](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Ejemplo-01) Ambiente de trabajo UI y Server
+- [Ejemplo 2](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Ejemplo-02) Creación de un Dashboard con pestañas y data tables
+- [Ejemplo 3](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Ejemplo-03) Dashboard dinámico
+- [Ejemplo 4](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Ejemplo-04) Dashboard condicional
 
-- Tema que veran en el ejemplo
 
-	- [Ejemplo 01](Ejemplo-01)
-	- [Reto 01](Reto-01)
+##### Retos de la sesión 1.
 
+- [Reto 1](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-01) Crear un Dashboard con pestañas
+- [Reto 2](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-02) Dashboard Dinámico
+- [Reto 3](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-03) Generar un dashboard de tipo profesional
+
+#### Postwork
+FALTA AGREGAR
