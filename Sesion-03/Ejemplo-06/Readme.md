@@ -78,7 +78,7 @@ Comportamiento mes a mes
 boxplot(tsb ~ cycle(tsb), ylim = c(min(tsb), max(tsb) ) )
 ```
 
-Ahora vamos a determinar si el comportamiento en la tendencia es estocástico o no utilizando la prueba de _Dickey-Fuller_
+Ahora vamos a determinar si el comportamiento en la tendencia es estocástico o no utilizando la prueba de _Dickey-Fuller_ que se encuentra en la libreria `tseries`
 
 ```R
 install.packages("tseries")
