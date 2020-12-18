@@ -14,9 +14,9 @@
 
 ##### Retos de la sesión 1.
 
-- [Reto 1](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-01) Crear un Dashboard con pestañas
-- [Reto 2](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-02) Dashboard Dinámico
-- [Reto 3](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-03) Generar un dashboard de tipo profesional
+- [Reto 1](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-01) 
+- [Reto 2](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-02) 
+- [Reto 3](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-03) 
 
 #### Postwork
 FALTA AGREGAR
