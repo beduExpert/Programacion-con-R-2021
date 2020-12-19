@@ -1,7 +1,7 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Postwork. Alojar el fichero a un Localhost 
+## Postwork. Alojar el fichero a un local host de MongoDB 
 
 ### OBJETIVO
 
