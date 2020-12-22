@@ -1,7 +1,7 @@
 library(mongolite)
 
-setwd("c:/Bedu/Sesión 7/")   #ependerá de donde estén guardados tus datos
-match=data.table::fread("../Sesión 7/match.data.csv")
+setwd("../Sesión 7/")   #dependerá de donde estén guardados tus datos
+match=data.table::fread("../data.csv")
 names(match)
 
 my_collection = mongo(collection = "match", db = "match_games") # create connection, database and collection
