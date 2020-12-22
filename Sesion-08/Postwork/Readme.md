@@ -1,29 +1,23 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+# Postwork sesión 8 
 
-### OBJETIVO
+#### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Que el alumno ejecute el código y trate de comprenderlo 
+- Observar el resultado de la toma de desiciones consecutivas, cuando estas se basan en datos historicos 
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+- Reproducir el código 
+- Haber realizado los postworks previos 
+- Analizar los gráficos resultantes
 
 #### DESARROLLO
+Copiar el código como se indica posteriormente en un script y realiza la ejecución, hecho esto
 
-Agrega las instrucciones generales del ejemplo o reto
+- Observa los gráficos resultantes y determina a partir de que número de   
 
-<details>
-
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agreges al menos una)
-
-![imagen](https://picsum.photos/200/300)
 
 
