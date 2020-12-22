@@ -14,10 +14,10 @@
 
 ##### Retos de la sesión 1.
 
-- [Reto 1](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-01) 
-- [Reto 2](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-02) 
-- [Reto 3](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-03) 
+- [Reto 1](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-01) Vinculación entre RStudio Cloud -> Github
+- [Reto 2](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-02) Extracción de tablas en un HTML
+- [Reto 3](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Reto-03) Vinculación entre Github -> RStudio
 
 #### Postwork
 
-- [Postwork](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Postwork)
+- [Postwork](https://github.com/beduExpert/Programacion-con-R-2020/tree/main/Sesion-07/Postwork) Conexión con Mongodb
