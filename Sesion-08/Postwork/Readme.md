@@ -1,7 +1,5 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-# Postwork sesión 8 
+# Postwork sesión 8. Dashboard 
 
 #### OBJETIVO
 
