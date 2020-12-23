@@ -3,7 +3,7 @@
 
 #### OBJETIVO
 
-- Que el alumno ejecute el código y trate de comprenderlo 
+- Ejecutar el código. 
 - Observar el resultado de la toma de desiciones consecutivas, cuando estas se basan en datos historicos 
 
 #### REQUISITOS
