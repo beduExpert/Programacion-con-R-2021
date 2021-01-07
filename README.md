@@ -1,4 +1,4 @@
-## Módulo: Estadística y Programación con R
+## Módulo: Estadística y Programación con R 2021 
 
 ### OBJETIVO 
  - Aprender a programar en R para hacer data analysis con el fin de obtener información más confiable para la toma decisiones importantes en las organizaciones.
