@@ -12,13 +12,13 @@
 
 #### Desarollo
 
-Durante esta sesión serás capaz de realizar una webApp con el uso de la libreria de `Shiny`, está es útil para presentar reportes. 
+Durante esta sesión serás capaz de realizar una webApp con el uso de la libreria de `Shiny`, está es útil para presentar reportes con los resultados destacados de nuestra investigación. Existen dos formas para realizar webApp, comenzaremos con dos archivos separados para tener un mayor orden:
 
 Lo primero que se debe hacer es generar un arhivo Shiny Web App en RStudio
 
 ![image](imagenes/1.1.png)
 
-Hay que colocar un nombre de nuestra Web App, además de seleccionar multiple file (esto creará dos archivos ui.R y server.R) y la ruta donde se almacenará 
+Hay que colocar un nombre de nuestra Web App, además de seleccionar _Mltiple File_ (esto creará dos archivos ui.R y server.R) y la ruta donde se almacenará 
 
 ![](imagenes/1.2.png)
 
