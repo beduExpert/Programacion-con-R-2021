@@ -1,14 +1,14 @@
-# Reto 3. Contraste de hipótesis
+# RETO 3. Contraste de hipótesis
 
-# Objetivo
+#### Objetivo
 
 - Llevar a cabo un contraste de hipótesis acerca de la media de una población normal cuando el tamaño muestral es pequeño.
 
-# Requisitos
+#### Requisitos
 
 - Haber trabajado con el Prework y el Work
 
-# Desarrollo
+#### Desarrollo
 
 Dada una muestra aleatoria de tamaño n = 10 de una distribución normal
 
@@ -20,6 +20,6 @@ tail(as.data.frame(muestra))
 
 estamos interesados en contrastar las hipótesis H0: mu = 120 *vs* H1: mu < 120 (contraste de cola inferior).
 
-1. Decide si rechazar o no la hipótesis nula si el nivel de significancia es alpha = 0.05
-2. Obtén el p-value de la prueba
-3. Lleva a cabo la prueba con la función `t.test`
+1. Decida si rechazar o no la hipótesis nula si el nivel de significancia es alpha = 0.05
+2. Obtenga el p-value de la prueba
+3. Lleve a cabo la prueba con la función `t.test`

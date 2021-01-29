@@ -1,4 +1,4 @@
-# Ejemplo 2. Características de los objetos (**str**, **summary**, **head** y **View**)
+# EJEMPLO 2. Características de los objetos (`str`, `summary`, `head` y `View`) y funciones
 
 #### Objetivo
 
@@ -13,7 +13,7 @@
 
 #### Función `str`
 
-`str` es una función que muestra de manera compacta la estructura interna de un objeto de R. Por ejemplo, si usamos como argumento de `str` el conjunto de datos `iris` que podemos encontrar en R
+`str` es una función que muestra de manera compacta la estructura interna de un objeto de `R`. Por ejemplo, si usamos como argumento de `str` el conjunto de datos `iris` que podemos encontrar en `R`
 
 ```R
 str(iris)
@@ -23,7 +23,7 @@ entonces la salida de la instrucción nos muestra el tipo de objeto, número de 
 
 #### Función `summary`
 
-La función `summary` es una función genérica usada para obtener resumenes de diferentes objetos de R, por ejemplo
+La función `summary` es una función genérica usada para obtener resumenes de diferentes objetos de `R`, por ejemplo
 
 ```R
 summary(1:100)
@@ -59,8 +59,28 @@ se devolverán las últimas seis filas del data frame
 
 #### Función `View`
 
-La función `View` aplicada a un objeto de R como un data frame, invoca un visor de datos al estilo de una hoja de cálculo, por ejemplo
+La función `View` aplicada a un objeto de `R` como un data frame, invoca un visor de datos al estilo de una hoja de cálculo, por ejemplo
 
 ```R
 View(iris)
 ```
+
+#### Función que calcula la moda
+
+En `R` también podemos crear nuestras propias funciones, por ejemplo
+
+```R
+moda <- function(vector){
+f.abs <- table(vector) # frecuencias absolutas
+max.f.abs <- max(f.abs) # obtenemos la máxima frecuencia absoluta
+pos.max <- which(f.abs == max.f.abs) # posición(es) de la(s) máxima(s) frecuencia(s) absoluta(s)
+print("La(s) moda(s) es(son): ")
+print(names(f.abs[pos.max]))
+paste("Con una frecuencia de: ", unique(as.vector(f.abs[pos.max])))
+}
+
+x <- sample(1:100, 100, replace = T) # Tomamos una muestra aleatoria de tamaño 100 con reemplazo de los primeros 100 números naturales
+table(x) # obtenemos las frecuencias absolutas de los valores de la muestra
+moda(x) # obtenemos la moda de los valores de la muestra
+```
+

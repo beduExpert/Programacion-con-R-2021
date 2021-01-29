@@ -1,39 +1,102 @@
-# Reto 2. Simulaci贸n de un proceso ARIMA(1, 1, 1)
+# Reto 3. Gr醘ica de series de tiempo
 
-# 1. Simule n = 1000 valores de un proceso ARIMA(1, 1, 1) con par谩metros
-# ar = 0.6 y ma = 0.2
+# Objetivo
 
-# 2. Ajuste un modelo Arima a la serie simulada para estimar los
-# par谩metros y observe las estimaciones de los par谩metros
+# Utilizar las funciones `ts` y `ts.plot` para crear series de tiempo en `R`.
 
-# 3. Obtenga el correlograma de los residuales del ajuste
+# Requisitos
 
-# 4. Realice tres predicciones con ayuda del modelo ajustado y la funci贸n
-# `predict`
+# Tener instalado R y RStudio
+# Haber trabajado con el Prework y el Work
 
-# **Soluci贸n**
+# Desarrollo
 
-# A continuaci贸n, simulamos datos de un modelo ARIMA(1, 1, 1) 
+# Con el conjunto de datos soccer.csv realiza lo siguiente
 
-set.seed(9)
-x <- arima.sim(model = list(order = c(1, 1, 1), 
-                            ar = 0.6, ma = 0.2), n = 1000)
+# 1. Crea un data frame para el Barcelona que indique el n鷐ero de goles
+# anotados en cada fecha que ha jugado.
 
-# ajustamos un modelo a la serie simulada para recuperar los par谩metros 
-# estimados
+# 2. Obt閚 un data frame que indique el promedio de goles anotados en cada
+# mes que ha jugado
 
-fit <- arima(x, order = c(1, 1, 1))
+# 3. Crea una serie de tiempo mensual para el n鷐ero promedio de goles 
+# anotados por el Barcelona
 
-# observamos las estimaciones de los par谩metros
+# 4. Realiza los pasos 1 a 3 para el Real Madrid
 
-coefficients(fit)
+# 5. Muestra en una misma imagen las gr醘icas de las series de tiempo
+# anteriores
 
-# obtenemos el correlograma de los residuales del ajuste
+# **Soluci髇**
 
-acf(resid(fit), main = "")
-title(main = "Autocorrelaciones para los Residuales del Ajuste")
+data <- read.csv("soccer.csv")
+data <- mutate(data, date = as.Date(date, "%Y-%m-%d"))
 
-# Llevamos a cabo tres predicciones con el modelo ajustado y la funci贸n `predict`
+# Anotaciones y fechas como local
 
-pred <- predict(fit, n.ahead = 3)
-pred$pred
+d1 <- data %>% select(date, home.team, home.score) %>% 
+  filter(home.team == "Barcelona") %>% 
+  rename(team = home.team, score = home.score)
+
+# Anotaciones y fechas como visitante
+
+d2 <- data %>% select(date, away.team, away.score) %>% 
+  filter(away.team == "Barcelona") %>% 
+  rename(team = away.team, score = away.score)
+
+# data frame de anotaciones y fechas
+
+d <- rbind(d1, d2) 
+
+# data frame de promedio de anotaciones en cada mes
+
+d <- mutate(d, Ym = format(date, "%Y-%m"))
+barca <- d %>% group_by(Ym) %>% summarise(goles = mean(score))
+
+# Creaci髇 de la serie de tiempo 
+
+# A partir de agosto 2017
+
+(barca <- ts(barca$goles, start = c(1, 1), end = c(3, 5), # Hasta diciembre de 2019
+            frequency = 10))
+
+######
+
+# Anotaciones y fechas como local
+
+d1 <- data %>% select(date, home.team, home.score) %>% 
+  filter(home.team == "Real Madrid") %>% 
+  rename(team = home.team, score = home.score)
+
+# Anotaciones y fechas como visitante
+
+d2 <- data %>% select(date, away.team, away.score) %>% 
+  filter(away.team == "Real Madrid") %>% 
+  rename(team = away.team, score = away.score)
+
+# data frame de anotaciones y fechas
+
+d <- rbind(d1, d2)
+
+# data frame de promedio de anotaciones en cada mes
+
+d <- mutate(d, Ym = format(date, "%Y-%m"))
+realM <- d %>% group_by(Ym) %>% summarise(goles = mean(score))
+
+# Creaci髇 de la serie de tiempo 
+
+(realM <- ts(realM$goles, start = c(1, 1), # A partir de agosto 2017
+            frequency = 10, end = c(3, 5))) # Hasta diciembre de 2019
+
+######
+
+# Gr醘icas de series de tiempo
+
+ts.plot(cbind(barca, realM), col = c(2, 4), ylim = c(0, 5))
+abline(h = mean(barca), lwd = 2, col = 2, lty = 2)
+abline(h = mean(realM), lwd = 2, col = 4, lty = 2)
+legend(x = 2, y = 5,
+       legend = c("Barcelona", "Real Madrid"),
+       col = c(2, 4), lty = c(1, 1))
+
+

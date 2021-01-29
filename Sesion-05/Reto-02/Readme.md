@@ -1,9 +1,11 @@
 
-# Ejemplo 2. MSV
+# Reto 2. Máquinas de vectores de soporte
 
 ### OBJETIVO 
 
-- Poner en práctica los recursos expuestos en los ejemplos de la sesión para poder aplicar las regresiones lineales ya sean simples o multiples
+- Crear un conjunto de entrenamiento y uno de prueba a partir de un conjunto de datos dado
+- Ajustar máquinas de vectores de soporte a un conjunto de entrenamiento
+- Llevar a cabo clasificación con un conjunto de prueba y crear la matriz de confusión
 
 #### REQUISITOS 
 
@@ -12,7 +14,7 @@
 
 #### DESARROLLO
 
-En el archivo de datos csv adjunto se encuentran observaciones correspondientes a dos clases diferentes indicadas por la variable `y`. Únicamente hay dos variables predictoras o características. A continuación realice los siguientes requerimientos:
+En el archivo de datos csv adjunto se encuentran observaciones correspondientes a dos clases diferentes indicadas por la variable `y`. Únicamente hay dos variables predictoras o características. A continuación realice los siguientes requerimientos (Hint: transforme primero la variable de respuesta `y` a variable categórica con las funciones `mutate` y `factor`):
 
 1. Carga los paquetes `ggplot2` y `e1071`; observe algunas características del data frame con las funciones `tail` y `dim`. Obtenga el gráfico de dispersión de los datos diferenciando las dos clases.
 

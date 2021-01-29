@@ -2,90 +2,65 @@
 
 #### Objetivo
 - Aprender a graficar y descomponer series de tiempo
-- Determinar si tiene un comportamiento estócastico
 
 #### Requisitos
-- Manejo de data frames
 - Prework
 - Gráficos: función plot
 
 #### Desarrollo
 
-Utilizaremos un data set de Kaggle el cual contiene datos sobre la temperatura en Fortaleza, Brasil del año 1946 a 1980. Lo primero que se hará será ajustar los datos para poder leerlos adecuadamente.
+Utilizaremos un data set del paquete `datasets`
 
 ```R
-library(dplyr)    
-    
-w.brazil <- read.csv("../station_fortaleza.csv")
-
-w.brazil <- w.brazil[, -c(1,14:18)]
-class(w.brazil)
-
-plot(w.brazil)
-```
-Quitamos los varoles que sean mayores a 50
-
-```R
-w.brazil <- w.brazil %>% filter(JAN<50,FEB<50,	MAR<50,	APR<50,	MAY<50,	JUN<50,	JUL<50,	AUG<50,	SEP<50,	OCT<50,	NOV<50,	DEC<50)
-
-
-bras <- apply(w.brazil, 2, c)
-class(bras)
-bra1 <-  as.vector(t(bras))
+library(datasets)
+(AP <- AirPassengers) # Número de pasajeros (en miles) por mes de una aerolínea
+class(AP)
 ```
 
-Convertimos los datos en serie de tiempo con el comando `ts`
-```R
-tsb <- ts(bra1, start = c(1946,01), frequency = 12)
-class(tsb)
-summary(tsb)
+Inicio, fin y frecuencia de la serie
 
-start(tsb); end(tsb); frequency(tsb)  # Inicio, fin y frecuencia de la serie
+```R
+start(AP); end(AP); frequency(AP)
 ```
 
 Graficamos la serie de tiempo
-```R
-plot(tsb, main = "Serie de tiempo", ylab = "Temp", xlab = "Año")
-```
-Descomposición aditiva de la serie de tiempo 
-```R
-tsbd <- decompose(tsb, type = "additive")
 
-plot(tsbd$trend)  # Gráfica  de la tendencia 
-plot(tsbd$seasonal) # Gráfica  de la temporalidad
-```
-Realizamos la gráfica de la descomposición aditiva con la tendencia y la estacionalidad utilizando el comando `lines`
 ```R
-plot(tsbd$trend , main  = "Aditiva", ylab = "Tendencia", xlab = "Año")
-lines(tsbd$seasonal + tsbd$trend, col = 2, lty = 2, lwd = 2 )
+plot(AP, main = "Pasajeros mensuales en una aerolínea", ylab = "Número de pasajeros (en miles)", xlab = "Mes")
 ```
 
-Desoomposición multiplicativa
-```R
-tsbd <- decompose(tsb, type = "multiplicative")
+Descomposición multiplicativa
 
-plot(tsbd$trend, main = "Tendencia", ylab = "Tendencia", xlab = "Año")  # Gráfica de la tendencia 
-plot(tsbd$seasonal, main = "Estacionalidad", ylab = "Tendencia", xlab = "Año") # Gráfica de la estacionalidad
+```R
+comp <- decompose(AP, type = "multiplicative")
 ```
 
-Realizamos la gráfica de la descomposición aditiva con la tendencia y la estacionalidad utilizando el comando `lines`
-```R
-plot(tsbd$trend , main  = "Multiplicativa", ylab = "Tendencia", xlab = "Año")
-lines(tsbd$seasonal * tsbd$trend, col = 2, lty = 2, lwd = 2 )
+Graficamos la serie original, tendencia, estacionalidad, y componente aleatoria
 
-Comportamiento mes a mes
 ```R
-boxplot(tsb ~ cycle(tsb), ylim = c(min(tsb), max(tsb) ) )
+plot(comp)
 ```
 
-Ahora vamos a determinar si el comportamiento en la tendencia es estocástico o no utilizando la prueba de _Dickey-Fuller_ que se encuentra en la libreria `tseries`
+Graficamos únicamente la serie de tendencia
 
 ```R
-install.packages("tseries")
-library(tseries)
-
-
-adf <- adf.test(tsb, alternative ="stationary", k=12)
+plot(comp$trend, col = "purple", lwd = 2, main = "Componente de tendencia", ylab = "Tendencia", xlab = "Mes")  # Gráfica de la tendencia 
 ```
 
-Si el p-value es menor a 0.05 se acepta la hipotesis nula que determina que el comportamiento en la estacionalidad es estocástico.
+Graficamos la componente estacional
+
+```R
+plot(comp$seasonal, col = "red", lwd = 2, main = "Componente de estacionalidad", ylab = "Estacionalidad", xlab = "Mes") # Gráfica de la estacionalidad
+```
+
+Finalmente graficamos la serie original, junto con la tendencia y tendencia*estacionalidad
+
+```R
+plot(AP, main = "Pasajeros mensuales en una aerolínea", ylab = "Número de pasajeros (en miles)", xlab = "Mes", ylim = c(100, 800))
+lines(comp$trend , col = "purple", lwd = 2)
+lines(comp$seasonal * comp$trend, col = "red", lty = 2, lwd = 2 )
+legend(1949, 800, 
+       c('Serie de tiempo original', 'Tendencia', 'Tendencia x Estacionalidad'),
+       col = c('black', 'purple', 'red'), text.col = "green4", lty = c(1, 1, 2), lwd = c(1, 2, 2),
+       merge = TRUE, bg = 'gray90')
+```

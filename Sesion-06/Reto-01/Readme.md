@@ -1,9 +1,9 @@
  
-## Reto 1. Series de tiempo
+## Reto 1. Proceso AR(1)
 
 ### OBJETIVO 
 
-- Aplicar los conociemientos aprendidos en los ejemplos sobre series de tiempo en datos generados aleatoriamente
+- Observar algunas características de una serie de tiempo que proviene de un proceso AR(1) y ajustar un modelo.
 
 #### REQUISITOS 
 
@@ -18,4 +18,4 @@ Reto 1. Simulación de un proceso AR(1)
 
 2. Obtén el correlograma y el correlograma parcial del proceso AR(1) simulado
 
-3. Ajusta un modelo autorregresivo a la serie simulada utilizando la función `ar`, observa el orden del módelo y el parámetro estimado (los paramétros estimados) 
+3. Ajusta un modelo autorregresivo a la serie simulada utilizando la función `ar`, observa el orden del modelo y el parámetro estimado (los parámetros estimados) 

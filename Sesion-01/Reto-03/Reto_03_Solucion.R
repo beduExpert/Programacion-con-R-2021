@@ -26,3 +26,4 @@ df.al
 #   el[contador] <- operación aritmética
 #   se imprime el resultado (el)
 # }
+

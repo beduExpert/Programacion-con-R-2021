@@ -1,39 +1,69 @@
-# Reto 2. Simulación de un proceso ARIMA(1, 1, 1)
+# Reto 2. Máquinas de vectores de soporte
 
-# 1. Simule n = 1000 valores de un proceso ARIMA(1, 1, 1) con parámetros
-# ar = 0.6 y ma = 0.2
-
-# 2. Ajuste un modelo Arima a la serie simulada para estimar los
-# parámetros y observe las estimaciones de los parámetros
-
-# 3. Obtenga el correlograma de los residuales del ajuste
-
-# 4. Realice tres predicciones con ayuda del modelo ajustado y la función
-# `predict`
+# En el archivo de datos csv adjunto se encuentran observaciones correspondientes a dos clases diferentes indicadas por la variable y. Únicamente hay dos variables predictoras o características. Realice lo siguiente:
+  
+# 1. Cargue los paquetes ggplot2 y e1071; observe algunas características del data frame con las funciones tail y dim. Obtenga el gráfico de dispersión de los datos diferenciando las dos clases.
+# 2. Genere de manera aleatoria un vector de índices para filtrar un conjunto de entrenamiento a partir del conjunto de datos dado. Con ayuda de las funciones tune y svm ajuste máquinas de vectores de soporte con un kernel radial a los datos de entrenamiento, para valores del parámetro cost igual a 0.1, 1, 10, 100, 1000 y valores del parámetro gamma igual a 0.5, 1, 2, 3, 4. Obtenga un resumen de los resultados.
+# 3. Con el modelo que tuvo el mejor desempeño en el paso anterior realice clasificación con la función predict y el conjunto de datos de prueba. Muestre la matriz de confusión.
 
 # **Solución**
 
-# A continuación, simulamos datos de un modelo ARIMA(1, 1, 1) 
+# Primero establecemos nuestro directorio de trabajo en donde
+# deberán estar nuestros datos.
 
-set.seed(9)
-x <- arima.sim(model = list(order = c(1, 1, 1), 
-                            ar = 0.6, ma = 0.2), n = 1000)
+datos <- read.csv("datosclases.csv")
 
-# ajustamos un modelo a la serie simulada para recuperar los parámetros 
-# estimados
+# 1. 
 
-fit <- arima(x, order = c(1, 1, 1))
+# Cargamos los paquetes `ggplot2` y `e1071`,
+# observamos algunas características del data frame
+# con las funciones `tail` y `dim`.
 
-# observamos las estimaciones de los parámetros
+library(dplyr)
+library(ggplot2)
+library(e1071)
 
-coefficients(fit)
+###
 
-# obtenemos el correlograma de los residuales del ajuste
+tail(datos); dim(datos); str(datos)
+datos <- mutate(datos, y = factor(y))
+# Obtenemos el gráfico de dispersión de los datos
+# diferenciando las dos clases
 
-acf(resid(fit), main = "")
-title(main = "Autocorrelaciones para los Residuales del Ajuste")
+ggplot(datos, aes(x = x.1, y = x.2, colour = y)) + 
+  geom_point() + 
+  theme_dark() + ggtitle("Datos")
 
-# Llevamos a cabo tres predicciones con el modelo ajustado y la función `predict`
+###
 
-pred <- predict(fit, n.ahead = 3)
-pred$pred
+# 2.
+
+# Generamos índices para el conjunto de entrenamiento
+
+train <- sample(300, 150)
+tail(as.data.frame(train))
+
+###
+
+# Ajustamos máquinas de vectores de soporte con un kernel radial 
+# para diferentes valores de los parámetros `cost` y `gamma`
+
+set.seed(67)
+tune.out <- tune(svm, y~., data = datos[train, ], 
+                 kernel = "radial", 
+                 ranges = list(cost = c(0.1, 1, 10, 100, 1000), 
+                               gamma = c(0.5, 1, 2, 3, 4)))
+
+
+### Obtenemos un resumen de los modelos ajustados y su desempeño
+
+summary(tune.out)
+
+
+###
+
+# Realizamos clasificación con el mejor modelo ajustado y obtenemos la matriz de confusión.
+
+table(true = datos[-train, "y"], 
+      pred = predict(tune.out$best.model, newdata = datos[-train,]))
+

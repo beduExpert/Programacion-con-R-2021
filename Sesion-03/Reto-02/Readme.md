@@ -1,18 +1,29 @@
-# Reto 2. Altura de los alumnos
+# RETO 2. Estadísticos de la NBA
+
+Full players stats from the 2014-2015 season + personal details such as height. weight, etc.
 
 #### Objetivo
-- Crear histogramas con `hist()` y con `ggplot`
-- Comparar las características de ambas funciones  
+- Generar histogramas
+- Generar gráficos de dispersión
+- Identificar datos relevantes 
+- Hacer Boxplots
 
 #### Requisitos
-- Manipulación de datos
-- Gráficas y atributos
+- Manejo de data frames
+- Graficas básicas
 
 #### Desarrollo
- Este ejemplo aunque es básico, servirá para realizar una comparación entre los comandos `hist()` y `ggplot`, los dos útiles, comparalos y decide cual es de tu agrado de acuerdo a los requerimientos. 
- 
- 1. Carga el data set `BD_Altura_Alunos.csv`
- 2. Realiza el histograma con la función `hist()`, nativa de R
- 3. Ahora realiza el histograma con el comando `ggplot`. (Recuerda que debes instalar el package `ggplot2`)
- 
- Reflexiona sobre el ejercicio y saca tus conclusiones sobre cuál es el método que más te convence.  
+
+1. Generar un histograma de los minuntos totales (`MIN`), de los jugadores y agregar una línea donde se muestre la media (Hint: para agregar la línea que muestre la media consulta la documentación sobre `geom_vline` y el argumento `xintercept`)
+
+2. Generar un histograma de edad (`Age`) y agregar una línea con la media
+
+3. Hacer un scatterplot de las variables `Weight` y  `Height` y observar la correlacón que existe entre ambas variables (1 sola gráfica)
+
+4. Utiliza la función `which.max` para saber quién es el jugador más alto, una vez hecho esto, presenta los resultados en una leyenda que diga "El jugador más alto es: `Name`, con una altura de: `Height`". Las unidades de altura deben ser en metros.
+
+5. Utiliza la función `which.min` para saber quién es el jugador más bajito, una vez hecho esto, presenta los resultados en una leyenda que diga "El jugador más bajito es: `Name`, con una altura de: `Height`". Las unidades de altura deben ser en metros.
+
+6. ¿Cuál es la altura promedio?, representa el resultado en una frase que diga: "La altura promedio es: ALTURA"
+
+7. Generar un scatterplot donde se representen las Asistencias totales (`AST.TOV`) vs Puntos (`PTS`), además has un face wrap con la posición (`Pos`). 

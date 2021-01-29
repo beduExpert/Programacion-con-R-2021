@@ -1,23 +1,26 @@
-# Ejemplo 2. Conexión a una BDD con R
+# Ejemplo 2. Conexión a una BDD con `R`
 
 
-#### Objetivo
-- Conectarse a una BDD utilizando R
-- 
+#### Objetivos
+- Conectarse a una BDD utilizando `R`
+- Lectura de  una BDD en `R`
 
 #### Requisitos
+
+- Tener instalados `R` y Rstudio
+- Haber estudiado el Prework
 
 #### Desarrollo
 
 CONFIGURACIONES DE CONEXIÓN: Hay 5 configuraciones necesarias para hacer una conexión:
 
-- Driver : consulta la sección previa de controladores para obtener información sobre la configuración, se utilizaran los drivers de MySQL
+- Driver : consulta la sección previa de controladores para obtener información sobre la configuración, se utilizarán los drivers de MySQL
 - Server : una ruta de red al servidor de la base de datos 
 - UID : nombre de usuario utilizado para acceder al servidor MySQL 
 - PWD : la contraseña correspondiente al UID proporcionado 
 - Port : debe establecerse en 3306 generalmente
 
-Comenzaremos instalando las librerias necesarias para realizar la conexión y lectura de la base de datos en RStudio, si previamente los tenías instalados omite la instalación, recuerda que solo necesitas realizarla una vez. 
+Comenzaremos instalando las librerías necesarias para realizar la conexión y lectura de la base de datos en RStudio, si previamente los tenías instalados omite la instalación, recuerda que solo necesitas realizarla una vez. 
 ```R
 install.packages("DBI")
 install.packages("RMySQL")
@@ -26,7 +29,7 @@ library(DBI)
 library(RMySQL)
 ```
 
-Una vez que se tengan las librerias necesarias se procede a la lectura (podría ser que necesites otras, si te las solicita instalalas y cargalas), de la base de datos de Shiny la cual es un demo y nos permite interactuar con este tipo de objetos. El comando `dbConnect` es el indicado para realizar la lectura, los demás parametros son los que nos dan acceso a la BDD.
+Una vez que se tengan las librerías necesarias se procede a la lectura (podría ser que necesites otras, si te las solicita instalalas y cargalas), de la base de datos de Shiny la cual es un demo y nos permite interactuar con este tipo de objetos. El comando `dbConnect` es el indicado para realizar la lectura, los demás parámetros son los que nos dan acceso a la BDD.
 
 ```R
 MyDataBase <- dbConnect(
@@ -58,6 +61,7 @@ Observemos que el objeto `DataDB` es un data frame, por lo tanto ya es un objeto
 
 ```R
 class(DataDB)
+dim(DataDB)
 head(DataDB)
 ```
 
@@ -72,7 +76,7 @@ pop.3 <- pop.mean *3   # Operaciones aritméticas
 pop.3
 ```
 
-Incluso podemos hacer unos de otros comandos de busqueda aplicando la libreria `dplyr` 
+Incluso podemos hacer uso de otros comandos de búsqueda aplicando la librería `dplyr` 
 
 ```R
 library(dplyr)

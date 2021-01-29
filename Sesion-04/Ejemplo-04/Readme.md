@@ -1,17 +1,17 @@
-# Ejemplo 4. Contraste de hipótesis
+# EJEMPLO 4. Contraste de hipótesis
 
-# Objetivo
+#### Objetivo
 
 - Llevar a cabo contrastes de hipótesis que ayuden a tomar decisiones
 
-# Requisitos
+#### Requisitos
 
 - Tener instalado `R` y RStudio
 - Haber estudiado el Prework
 
-# Desarrollo
+#### Desarrollo
 
-# Contrastes comunes con muestras grandes
+#### Contrastes comunes con muestras grandes
 
 #### Contraste de cola superior
 
@@ -162,7 +162,7 @@ polygon(c(z0, x[x>=z0], max(x)), c(0, y[x>=z0], 0), col="purple")
 axis(side = 1, at = z0, font = 2, padj = 1, lwd = 2)
 ```
 
-# Contraste de hipótesis con muestras pequeñas para mu y mu1 - mu2
+#### Contraste de hipótesis con muestras pequeñas para mu y mu1 - mu2
 
 #### Contraste de cola superior
 
@@ -194,7 +194,7 @@ Supongamos que estamos interesados en encontrar la región de rechazo (de cola s
 Como
 
 ```R
-z0 > z.05
+t0 > t.05
 ```
 
 rechazamos la hipótesis nula

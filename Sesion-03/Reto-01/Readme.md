@@ -1,25 +1,18 @@
-# Reto 1. Series de tiempo
+# RETO 1. Altura de los alumnos
 
-#### Proposito
-- Poner en práctica los conocimientos de series de tiempo para poder manipularlas y así obtener información relevante
-- Implementar la descomposición **aditiva** y **multiplicativa**
+#### Objetivo
+- Crear histogramas con `hist()` y con `ggplot`
+- Comparar las características de ambas funciones  
 
 #### Requisitos
-- Haber llevado seguimiento de los ejercicios en clase
-- Prework
+- Manipulación de datos
+- Gráficas y atributos
 
-#### Desarrollo 
-
-Utiliza los datos (AP), de la siguiente librería para realizar lo que se te pide 
-
-```R
-library(forecast)
-data(AirPassengers)
-AP <- AirPassengers
-```
-
-1. Realiza la gráfica la serie de tiempo 
-2. Descompón la serie de tiempo en aditiva y multiplicativa y realiza sus gráficas
-3. Realiza la gráfica de la descomposición aditiva con la tendencia y la estacionalidad utilizando el comando `lines`
-4. Realiza la gráfica de la descomposición multiplicativa con la tendencia y la estacionalidad utilizando el comando `lines`
-5. Ejecuta la prueba de _Dickey-Fuller_ para determinar si el comportamiento es estocástico
+#### Desarrollo
+Este ejemplo aunque es básico, servirá para realizar una comparación entre las funciones `hist()` y `ggplot`, los dos útiles, comparalos y decide cual es de tu agrado de acuerdo a los requerimientos. 
+ 
+ 1. Carga el data set `BD_Altura_Alunos.csv` (Hint: Si tienes algún inconveniente con los datos, lee sobre el argumento `sep` de la función `read.csv`)
+ 2. Realiza el histograma con la función `hist()`, nativa de R
+ 3. Ahora realiza el histograma con la función `ggplot`. (Recuerda que debes instalar el paquete `ggplot2`)
+ 
+ Reflexiona sobre el ejercicio y saca tus conclusiones sobre cuál es el método que más te convence.  

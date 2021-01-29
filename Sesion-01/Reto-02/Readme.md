@@ -22,3 +22,6 @@ Utiliza el data frame de ventas de libros por Amazon y realiza las siguientes ac
 3. Usa el nombre de los libros como el nombre de las columnas
 
 4. ¿Cúal es el libro de menor y mayor precio?
+
+
+

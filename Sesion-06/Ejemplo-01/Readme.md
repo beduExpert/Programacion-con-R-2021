@@ -9,10 +9,11 @@
 - Haber estudiado el Prework
 
 ####  Desarrollo
-En este ejemplo se hará la visualización, descomposición de series de tiempo además de poder determinar la tendencia de nuestros datos a lo largo de un periodo de tiempo determinado, las series de tiempo son recolectadas y sirven para estudios de tipo retrospectivo, además también se pueden realizar predicciónes a futuro. Todo cumulo de datos que tenga una variable temporar, distribuida por meses o intervalos de tiempo definidos se pueden representar de esta manera, aunque lo típico es que sea en meses y años. A continuación veras aplicaciones que te serán de mucha útilidad para desarrollar análisis temporales
- 
-Vamos a comenzar con un ejemplo clásico, cargando el paquete `TSA`
+En este ejemplo se hará la visualización y descomposición de series de tiempo, además de poder determinar la tendencia de nuestros datos a lo largo de un periodo de tiempo determinado, las series de tiempo son recolectadas y sirven para estudios de tipo retrospectivo, además también se pueden realizar predicciones a futuro. A continuación verás aplicaciones que te serán de mucha utilidad.
 
+#### Técnicas descriptivas: gráficas, tendencias y variación estacional
+
+El primer dataset corresponde a las ventas mensuales de un filtro de aceite en diversos concesionarios para equipo de construcción.  
 ```R
 library(TSA)
 data(oilfilters); plot(oilfilters, type = "o", ylab = "Ventas", xlab = "Tiempo", main = "Ventas Mesuales ")
@@ -22,8 +23,7 @@ plot(oilfilters, type = "l", ylab = "Ventas", xlab = "Tiempo",
 points(y = oilfilters, x = time(oilfilters),
 pch = as.vector(season(oilfilters)))
 ```
-
-#### Técnicas descriptivas: gráficas, tendencias y variación estacional
+Ahora utilizaremos el dataset AirPAssengers, el cual contiene datos de serie de tiempo correspondiente a pasajeros aéreos.
 
 ```R
 data(AirPassengers)
@@ -161,7 +161,7 @@ Trend[100]*Seasonal[100]*Random[100]
 Elec.ts[100]
 ```
 
-Inpirado en la siugiente bibliografía:
+Inspirado en la siguiente bibliografía:
 
 P. Cowpertwait & A. Metcalfe. (2009). Introductory Time Series with R. 233 Spring Street, New York, NY 10013, USA: Springer Science+Business Media, LLC.
 

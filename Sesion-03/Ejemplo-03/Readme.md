@@ -1,61 +1,47 @@
-# Ejemplo 3. Boxplots y outliers
+# Ejemplo 3. Gráficos de dispersión (scatter plots)  
 
 #### Objetivo
-- Generar y comprender los gráficos de tipo boxplot
-- Introducción a la distribución de los datos
+- Desarrollar habilidades para realizar e interpretar scatter plots
+- Utilizar diferentes funciones de `ggplot` 
+- Variantes de scatter plots
 
 #### Requisitos
-- Lectura de ficheros CVS
-- Nociones básicas de ggplot
+- Tener conceptos básicos de gráficación 
+- Haber realizado el prework
 
 #### Desarrollo
-Comenzamos leyendo un fichero, el cual contiene información sobre dos grupos de control G1 y G2, a los cuales se les realizó  a cada uno una medición en 3 momentos diferentes C1, C2 y C3
 
-Cargamos las librerias necesarias para la realización del ejemplo, además del fichero CVS a utilizar
+Realizamos un scatter plot de las variables `wt` y `mpg`, debemos utilizar necesariamente `geom_point()`
 ```R
-library(ggplot2)
-library(dplyr)
-
-data2 <- read.csv("../Sesion_03/boxp.csv")
+(my_scatplot <- ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point())
 ```
 
-Revisamos el encabezado del fichero y el nombre de sus variables o columnas
+Adicionalmente se puede agregar una línea de tendencia 
 ```R
-head(data2)
-names(data2)
+(my_scatplot <- ggplot(mtcars, aes(x = wt, y = mpg)) + 
+  geom_point() + 
+  geom_smooth(method = "lm", se = T))  # modelo lineal, cambia el parametro `se`, este hace referencia al intervalo de confianza
 ```
-
-Vamos a reliazar un cambio en la variable `Mediciones` para practicar 
-```R
-data <- mutate(data2, Mediciones = Mediciones*1.23)
-head(data)
-```
-Observamos algunos datos estádisticos sobre las variables
-```R
-summary(data)
-```
-
-Como estamos ante la presencia de `NA´s` los eliminamos con `complete.cases()` y solamente seleccionamos aquellos sin `NA`s` y convertimos en factores la variable `Categoria` y `Grupo`
+Agregando los nombres de los ejes, observa que se almacenó el gráfico en el objeto **my_scatplot** (nota que pueden agregarse más características seguido del signo `+`)
 
 ```R
-bien <- complete.cases(data)
-data <- data[bien,]
-data <- mutate(data, Categoria = factor(Categoria), Grupo = factor(Grupo))
+my_scatplot + xlab('Weight (x 1000lbs)') + ylab('Miles per Gallon')
 ```
 
-Finalmente realizamos el boxplot
+Otras características interesantes
+
 ```R
-ggplot(data, aes(x = Categoria, y = Mediciones, fill = Grupo)) + geom_boxplot() +
-  ggtitle("Boxplots") +
-  xlab("Categorias") +
-  ylab("Mediciones")
+(my_scatplot <- ggplot(mtcars, aes(x = wt, y = mpg, col = cyl)) + geom_point())
+my_scatplot + labs(x = 'Weight (x1000lbs)', y = 'Miles per Gallon', colour = 'Number of\n Cylinders')
 ```
 
-Agregamos el nombre de las etiquetas para los grupos G1 y G2
+Haciendo un facewrap con la variable `cyl`
 ```R
-ggplot(data, aes(x = Categoria, y = Mediciones, fill = Grupo)) + geom_boxplot() +
-  scale_fill_discrete(name = "Dos Gps", labels = c("G1", "G2")) + 
-  ggtitle("Boxplots") +
-  xlab("Categorias") +
-  ylab("Mediciones")
+my_scatplot + facet_wrap("cyl")
 ```
+Separándolas por tipo de transmisión (am =	Transmission (0 = automatic, 1 = manual))
+```R
+my_scatplot + facet_grid(am~cyl)
+```
+
+Como puedes observar, hay muchas formas de representar el gráfico de dispersión, éstas son algunas de ellas, obviamente existen muchas más. 

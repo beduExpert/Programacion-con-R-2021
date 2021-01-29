@@ -1,15 +1,15 @@
 # Ejemplo 4. Lectura de archivos JSON, XML y tablas en HTML
 
 #### Objetivo
-- Realizar lectura de archivos JSON, XML para poder aplicar las funciones que se requieran de R y poder extraer información convirtiendolo en un data frame
+- Realizar lectura de archivos JSON y XML para poder aplicar las funciones que se requieran de `R` y poder extraer información convirtiéndola en un data frame
 
 #### Requisitos
-- libreria `rjson`
-- libreria `XML`
+- librería `rjson`
+- librería `XML`
 
 #### Desarrollo
 
-Comenzaremos instalando los packages necesarios para despues cargarlos al R
+Comenzaremos instalando los paquetes necesarios para después cargarlos a `R`
 
 ```R
 #install.packages("rjson")   #Siempre usar comillas en el nombre del paquete
@@ -35,12 +35,12 @@ Finalmente ya que pudimos acceder al contenido del Json, también podemos realiz
 sqrt(JsonData$Mobile)
 ```
 
-Para entrar a las demás variables recuerda que puedas usar el operador de `$`, es decir `JsonData$`
+Para entrar a las demás variables recuerda que puedas usar el operador de `$`, es decir, `JsonData$`
 
 
 ### XML
 
-Ahora vamos a leer datos XML en R, utilizando un archivo XML alojado [aquí](http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xml/cd_catalog.xml)
+Ahora vamos a leer datos XML en `R`, utilizando un archivo XML alojado [aquí](http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xml/cd_catalog.xml)
 
 Lo primero es instalar y cargar el paquete `XML` y alojar el link en una variable `link`, para su lectura
 
@@ -69,7 +69,7 @@ xml_df <- data.frame(t(topxml), row.names= NULL)
 
 str(xml_df) # Observar la naturaleza de las variables del DF
 ```
-Convertiremos incluso las varialbes de `PRICE` y `YEAR` en datos numéricos para poder realizar operaciones con este dato
+Convertiremos incluso las variables de `PRICE` y `YEAR` en datos numéricos para poder realizar operaciones con este dato
 
 ```R
 xml_df$PRICE <- as.numeric(xml_df$PRICE) 
@@ -79,15 +79,15 @@ mean(xml_df$PRICE)
 mean(xml_df$YEAR)
 ```
 
-Todo esto se puede realizar en un sólo paso utilizando el siguiente comando
+Todo esto se puede realizar en un solo paso utilizando el siguiente comando
 ```R
-data_df <- xmlToDataFrame(url3)
+data_df <- xmlToDataFrame(link)
 head(data_df)
 ```
 
 ## Tablas en HTML 
 
-Comenzamos instalando el package `rvest` el cual nos permitirá realizar la lectura de la tabla en el HTML
+Comenzamos instalando el paquete `rvest` el cual nos permitirá realizar la lectura de la tabla en el HTML
 
 ```R
 install.packages("rvest")
@@ -97,11 +97,11 @@ Introducimos una dirección URL donde se encuentre una tabla
 
 ```R
 theurl <- "https://solarviews.com/span/data2.htm"
-file<-read_html(theurl)    # Leemos el html
+file <- read_html(theurl)    # Leemos el html
 ```
 Selecciona pedazos dentro del HTML para identificar la tabla
 ```R
-tables<-html_nodes(file, "table")  
+tables <- html_nodes(file, "table")  
 ```
 Hay que analizar 'tables' para determinar cual es la posición en la lista que contiene la tabla, en este caso es la no. 4 
 
