@@ -1,11 +1,13 @@
 # Ejemplo 2. Creación de un Dashboard con pestañas y data tables
 
 #### Objetivo
+- Desarrolar un dashboard en el que se tenga una distribución por pestañas en el que se muestren diversos resultados de una forma organizada, entre las que se encuentran 
 
 #### Requisitos
+- Tener la libreria shiny instalada
+- Conocimientos básicos de UI y del server.R
 
 #### Desarrollo
-
 
 Continuando con la base del ejemplo anterior, ahora lo que haremos es agregar imágenes dentro de nuestro panel en el archivo **`ui.R`**
 
