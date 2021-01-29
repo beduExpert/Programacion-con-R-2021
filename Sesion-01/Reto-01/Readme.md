@@ -10,8 +10,7 @@ Haber realizado el prework, además de haber realizado los ejemplos de la sesió
 ## Desarrollo
 Abre el fichero que se encuentra en el repositorio y obten sus carácteristicas, para finalmente imprimir los resultados en un fichero CSV.
 
-1. Leer el archivo **netflix_titles.csv** desde Github
-(https://raw.githubusercontent.com/ecoronadoj/Sesion_1/main/Data/netflix_titles.csv), almacenarlo en un df llamado netflix
+1. Leer el archivo **netflix_titles.csv** desde [Github](https://raw.githubusercontent.com/ecoronadoj/Sesion_1/main/Data/netflix_titles.csv) y almacenarlo en un **df** llamado **netflix**
 
 2. Obtener la dimensión y el tipo de objeto que se obtiene
 
