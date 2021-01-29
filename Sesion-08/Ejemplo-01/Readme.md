@@ -1,9 +1,10 @@
 # Ejemplo 01. Ambiente de trabajo UI y Server
 
 #### Objetivo
+
+- Crear un dashboard simple para mostrar gráficas de dispersión en una webApp
 - Entender el entorno de trabajo con la libreria `Shiny`
 - Funciones básicas de la UI y del Server
-- Presentar gráficas de dispersión en una webApp
 
 #### Requisitos
 - Tener instalada y cargada la libreria `Shiny`
@@ -94,5 +95,10 @@ shinyServer(function(input, output) {
                                     }
             )
 ```
+
+Tu resultado debería ser como la siguiente imagen
+<p align="center">
+<img src="imagenes/1.5.png" width="650" height="450"> 
+</p>
 
 Ejecula la webApp y observa el resultado que se generó con el código, ¿Qué otros escenarios se te ocurren?
