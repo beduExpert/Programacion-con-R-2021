@@ -1,23 +1,24 @@
-# Reto 3. Loops
+# Reto 2. Operaciones con data frames
 
-# Objetivo 
+# Objetivo
 
-- Crear vectores aleatorios
-- Operaciones básicas
-- Crear un loop y su pseudocódigo
+- Realizar operaciones con data frames, para extracción de información relevante 
 
 # Requisitos
 
-Entender la lógica de un loop, para poder realizar su programación y su pseudocódigo 
+Haber cumplido con los retos anteriores. Documentarse con el prework 
 
 # Desarrollo
-Leer detenidamente las instrucciones, para ejecutar apropiadamente el código requerido
 
-Agrega las instrucciones generales del ejemplo o reto
-```R
-1. Genera un vector de 44 entradas (aleatorias) llamado ran
-2. Escribe un loop que eleve al cubo las primeras 15 entradas y les sume 12
-3. Guarda el resultado en un data frame, donde la primera columna sea el número aleatorio y la segunda el resultado, nómbralo df.al
-4. Escribe el pseudocódigo del loop anterior
+Realizar la lectura de los datos y seguir las instruccines que se muestran a continuación.
 
-```
+Utiliza el data frame de ventas de libros por Amazon y realiza las siguientes actividades:
+
+1. Almacenalo en un data frame que se llame amazon.best
+
+2. Calcula el data frame transpuesto, asígnale el nombre de tAmazon y conviértelo en un data frame 
+(Hint: consulta la ayuda sobre las funciones `t` y `as.data.frame`)
+
+3. Usa el nombre de los libros como el nombre de las columnas
+
+4. ¿Cúal es el libro de menor y mayor precio?
