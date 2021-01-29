@@ -1,19 +1,24 @@
-# Reto 2. Dashboard Dinámico
+# Reto 2. Operaciones con data frames
 
-#### Objetivo
-- Generar un dashboard dinámico que muestre los histogramas para ciertas variables seleccionadas de un datased
+# Objetivo
 
-#### Requisitos
-- Shiny
-- datasets de airquality
-- Haber realizado los ejercicios de la clase
+- Realizar operaciones con data frames, para extracción de información relevante 
 
-#### Desarrollo
+# Requisitos
 
-Generar un dashboard dinámico que muestre de manera dinámica los histogramas de las variables 
+Haber cumplido con los retos anteriores. Documentarse con el prework 
 
-- `Ozone`, `Solar.R`, `Wind`, `Temp`, `Month` y `Day`, para el dataset `airquality` 
-- `carat`, `depth` y `price`, para el dataset `diamonds` de la libreria `ggplot2`
-- Desde la columna 4 hasta la 11 del dataset `midwest` de `ggplot2`
+# Desarrollo
 
-Hint: Hay que tener presente que para que se realicen los histogramas se deben ingresar data frames
+Realizar la lectura de los datos y seguir las instruccines que se muestran a continuación.
+
+Utiliza el data frame de ventas de libros por Amazon y realiza las siguientes actividades:
+
+1. Almacenalo en un data frame que se llame amazon.best
+
+2. Calcula el data frame transpuesto, asígnale el nombre de tAmazon y conviértelo en un data frame 
+(Hint: consulta la ayuda sobre las funciones `t` y `as.data.frame`)
+
+3. Usa el nombre de los libros como el nombre de las columnas
+
+4. ¿Cúal es el libro de menor y mayor precio?es
