@@ -73,17 +73,13 @@ Elec.ts <- ts(CBE[, 3], start = 1958, freq = 12)
 Beer.ts <- ts(CBE[, 2], start = 1958, freq = 12)
 Choc.ts <- ts(CBE[, 1], start = 1958, freq = 12)
 
-Electricidad <- Elec.ts
-Cerveza <- Beer.ts
-Chocolate <- Choc.ts
-
-plot(cbind(Electricidad, Cerveza, Chocolate), 
+plot(cbind(Elec.ts, Beer.ts, Choc.ts), 
      main = "Producción de Chocolate, Cerveza y Electricidad", 
      xlab = "Tiempo",
      sub = "Enero de 1958 - Diciembre de 1990")
 ```
 
-Serie de temperatura global
+Serie de temperaturas globales, expresadas como anomalías de las medias mensuales
 
 ```R
 Global <- scan("global.txt")
@@ -104,14 +100,10 @@ plot(New.series, xlab = "Tiempo", ylab = "Temperatura en °C", main = "Serie de 
 
 #### Descomposición de series
 
-```R
-CBE <- read.csv("cbe.csv", header = TRUE)
-Elec.ts <- ts(CBE[, 3], start = 1958, freq = 12)
-```
-
 Modelo Aditivo
 
 ```R
+# Se debe elegir entre modelo aditivo o modelo multiplicativo cuando sea razonable suponer la descomposición
 Elec.decom.A <- decompose(Elec.ts)
 
 plot(Elec.decom.A, xlab = "Tiempo", 

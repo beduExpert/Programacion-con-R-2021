@@ -1,20 +1,20 @@
 # Ejemplo 5. Dashboard interactivo ejecutivo
 
 #### Objetivo
-- Generar un dashboard interactivo que tenga una presentación profesional y que pueda interactur con varias variables
+- Generar un dashboard interactivo que tenga una presentación profesional y que pueda interactuar con varias variables
 
 #### Requisitos
-- haber realizados los ejercicios anteriores
-- tener las librerias `shiny` y `shinydashboard`
+- Haber realizado los ejercicios anteriores
+- Tener las librerías `shiny` y `shinydashboard`
 - Analizar el código siguiente
 
 #### Desarrollo
-Se comenzará utilizando el código siguiente ahora en un solo archivo `app.R` a diferencia de los ejemplos anteriores esta webApp se correra en un sólo fichero para que puedas observar la diferencia entre ambas formas de realizar las webApps.
+Se comenzará utilizando el código siguiente ahora en un solo archivo `app.R` a diferencia de los ejemplos anteriores esta webApp se correrá en un solo fichero para que puedas observar la diferencia entre ambas formas de realizar las webApps.
 
 ```R
 ## app.R ##
 
-## Dash board para el data set 'mtcars'
+## Dashboard para el data set 'mtcars'
 
 library(shiny)
 library(shinydashboard)

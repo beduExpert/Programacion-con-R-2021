@@ -1,10 +1,10 @@
 # Ejemplo 3. Dashboard dinámico
 
 #### Objetivo
-- Crear un dashboard de tipo dinámico utilizando gráficas de tipo histograma además de seleccionar las variables mediante botones.
+- Crear un dashboard de tipo dinámico utilizando gráficas de tipo histograma, además de seleccionar las variables mediante botones.
 
 #### Requisitos
-- Utileria shiny
+- Utilería shiny
 - Generar un archivo de tipo Shiny webApp
 - Conocimiento de data frames
 
@@ -13,7 +13,7 @@
 Generar la Shiny webApp y dentro del archivo `ui.R` pegar el siguiente código
 
 ```R
-# Generación de un dashboard de tipo de selección Dinámica
+# Generación de un dashboard de tipo de selección dinámica
 
 library(shiny)
 
@@ -38,10 +38,10 @@ shinyUI(fluidPage(
 ))
 ```
 
-Para el archivo `Server.R` pega el siguiente código, además trata de identificar que hacen cada uno de los comandos que se presentan a continuación:
+Para el archivo `server.R` pega el siguiente código, además trata de identificar que hacen cada uno de los comandos que se presentan a continuación:
 
 ```R 
-# Generación de un dashboard de tipo de selección Dinámica
+# Generación de un dashboard de tipo de selección dinámica
 
 library(shiny)
 

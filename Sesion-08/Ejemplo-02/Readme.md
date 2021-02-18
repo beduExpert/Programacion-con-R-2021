@@ -1,13 +1,14 @@
 # Ejemplo 2. Creación de un Dashboard con pestañas y data tables
 
 #### Objetivo
-- Desarrolar un dashboard en el que se tenga una distribución por pestañas en el que se muestren diversos resultados de una forma organizada, entre las que se encuentran 
+- Agregar pestañas al dashboard
+- Agregar elementos
 
 #### Requisitos
-- Tener la libreria shiny instalada
-- Conocimientos básicos de UI y del server.R
+- Crear un dashboard simple
 
 #### Desarrollo
+
 
 Continuando con la base del ejemplo anterior, ahora lo que haremos es agregar imágenes dentro de nuestro panel en el archivo **`ui.R`**
 
@@ -36,44 +37,50 @@ shinyUI(
 
 ```
 
-Esto podemos organizarlo de mejor manera agregando pestañas con el comando `tabsetPanel` y con `tabPanel`para cada pestaña indivudual
+Esto podemos organizarlo de mejor manera agregando pestañas con el comando `tabsetPanel` y con `tabPanel`para cada pestaña individual
 
 ```R
-library(shiny)
+library(class)
+library(dplyr)
+library(stringr)
 
+library(shiny)
+#install.packages("shinydashboard")
+library(shinydashboard)
 
 shinyUI(
     pageWithSidebar(
-        headerPanel("Aplicacion basica con Shiny"),
+        headerPanel("Aplicacion básica con Shiny"),
         sidebarPanel(
             p("Crear plots con el DF 'auto'"), 
             selectInput("x", "Seleccione el valor de X",
                         choices = names(mtcars))
         ),
-       
-       mainPanel(
+        mainPanel(
+            
           
-    #Agregando pestañas     # <-----------
-tabsetPanel(              # <-----------
-        tabPanel("Plots",   #Pestaña de Plots  <-----------
+    #Agregando pestañ±as
+    tabsetPanel(
+        tabPanel("Plots",                   #Pestaña de Plots <---------
                  h3(textOutput("output_text")), 
-                 plotOutput("output_plot"),
-                 ),
+                 plotOutput("output_plot"), 
+        ),
         
-        tabPanel("imágenes",  #Pestaña de imágenes <-----------
+        tabPanel("imágenes",                #Pestaña de imágenes  <---------
                  img( src = "cor_mtcars.png", 
                       height = 450, width = 450)
-                ), 
+        ), 
         
-        #Aprovehamos y agregamos las siguientes pestañas # <-----------
-         tabPanel("Summary", verbatimTextOutput("summary")),    # salida del Summary <-----------
-         tabPanel("Table", tableOutput("table")),               # salida de la tabla <-----------
-         tabPanel("Data Table", dataTableOutput("datatable"))   # salida del data table <-----------
+        tabPanel("Summary", verbatimTextOutput("summary")),     # <--------- Summary
+        tabPanel("Table", tableOutput("table")),                # <--------- Table
+        tabPanel("Data Table", dataTableOutput("data_table"))   # <--------- Data table
     )
 )
 )
 
 )
+
+
 
 ```
 
@@ -84,7 +91,7 @@ library(shiny)
 
 shinyServer(function(input, output) {
 
- output$output_text <- renderText(paste("mpg~", input$x))   #Titulo del main Panel
+ output$output_text <- renderText(paste("mpg~", input$x))   #Título del main Panel
  
  #Gráficas                       <----------
  output$output_plot <- renderPlot( plot( as.formula(paste("mpg ~", input$x)),

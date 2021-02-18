@@ -5,13 +5,13 @@
 Desarrollar un dashboard de tipo condicional para la selección de dos tipos de gráficas.
 
 #### Requisitos
-- Libreria Shiny
+- Librería shiny
 - Manejo de data frames
-- haber realzado los ejemplos anteriores
+- Haber realizado los ejemplos anteriores
 
 #### Desarrollo
 
-Ahora lo que tendrás que hace es dentro del archivo `ui.R` utilizar el siguiente código
+Ahora lo que tendrás que hacer es dentro del archivo `ui.R` utilizar el siguiente código
 
 ```R
 #Condicional
@@ -48,7 +48,7 @@ shinyUI(fluidPage(
 )
 ```
 
-Dentro del archivo `Server.R` pegar el siguiente código y analizar que función desempeñan los inputs en este caso
+Dentro del archivo `server.R` pegar el siguiente código y analizar que función desempeñan los inputs en este caso
 
 ```R
 #Condicional
