@@ -86,3 +86,9 @@ head(pop50.mex)
 
 unique(DataDB$CountryCode)   # Países que contiene la BDD
 ```
+
+---
+
+*Otra alternativa de conexión es usar `odbc` que permite realizar conexiones a cualquier base de datos. Aquí dejamos un [material](odbc.md) para que lo uses como más te convenga.*
+
+---
