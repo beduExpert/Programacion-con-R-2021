@@ -12,20 +12,20 @@ Conocer mejor el conjunto de datos con el que se esté trabajando,
 
 ##### Aquí encontraras los ejemplos y retos de la sesión 3.
 
-- [Ejemplo 1](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-03/Ejemplo-01) Paquete ggplot2
-- [Ejemplo 2](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-03/Ejemplo-02) Histogramas
-- [Reto 1](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-03/Reto-01) Altura de los alumnos
-- [Ejemplo 3](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-03/Ejemplo-03) Gráficos de dispersión
-- [Reto 2](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-03/Reto-02) Estadísticos de la NBA
-- [Ejemplo 4](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-03/Ejemplo-04) Boxplots y outliers
-- [Ejemplo 5](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-03/Ejemplo-05) Gráficos de líneas o barras
+- [Ejemplo 1](Ejemplo-01/Readme.md) Paquete ggplot2
+- [Ejemplo 2](Ejemplo-02/Readme.md) Histogramas
+- [Reto 1](Reto-01/Readme.md) Altura de los alumnos
+- [Ejemplo 3](Ejemplo-03/Readme.md) Gráficos de dispersión
+- [Reto 2](Reto-02/Readme.md) Estadísticos de la NBA
+- [Ejemplo 4](Ejemplo-04/Readme.md) Boxplots y outliers
+- [Ejemplo 5](Ejemplo-05/Readme.md) Gráficos de líneas o barras
 
 #### Opcionales (en la sesión 6 se revisará el tema de series de tiempo)
 
-- [Ejemplo 6](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-03/Ejemplo-06) Series de tiempo y descomposición
-- [Reto 3](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-03/Reto-03) Series de tiempo y descomposición
+- [Ejemplo 6](Ejemplo-06/Readme.md) Series de tiempo y descomposición
+- [Reto 3](Reto-03/Readme.md) Series de tiempo y descomposición
 
 ## Postwork de la sesión
 
-- [Postwork](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-03/Postwork)
+- [Postwork](Postwork/Readme.md)
 

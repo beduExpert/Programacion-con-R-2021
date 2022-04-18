@@ -12,14 +12,14 @@ Estudiar algunas distribuciones de probabilidad muy comunes y útiles, obtener e
 
 #### Los ejemplos y retos de esta sesión 4 son los siguientes:
 
-- [Ejemplo 1](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-04/Ejemplo-01) Distribuciones binomial, normal y t de Student
-- [Reto 1](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-04/Reto-01) Distribuciones binomial, normal y t de Student
-- [Ejemplo 2](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-04/Ejemplo-02) Teorema central del límite
-- [Ejemplo 3 (**Opcional**)](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-04/Ejemplo-03) Algunos estimadores puntuales insesgados comunes
-- [Reto 2 (**Opcional**)](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-04/Reto-02) Algunos estimadores puntuales insesgados comunes
-- [Ejemplo 4](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-04/Ejemplo-04) Contraste de hipótesis
-- [Reto 3](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-04/Reto-03) Contraste de hipótesis
+- [Ejemplo 1](Ejemplo-01/Readme.md) Distribuciones binomial, normal y t de Student
+- [Reto 1](Reto-01/Readme.md) Distribuciones binomial, normal y t de Student
+- [Ejemplo 2](Ejemplo-02/Readme.md) Teorema central del límite
+- [Ejemplo 3 (**Opcional**)](Ejemplo-03/Readme.md) Algunos estimadores puntuales insesgados comunes
+- [Reto 2 (**Opcional**)](Reto-02/Readme.md) Algunos estimadores puntuales insesgados comunes
+- [Ejemplo 4](Ejemplo-04/Readme.md) Contraste de hipótesis
+- [Reto 3](Reto-03/Readme.md) Contraste de hipótesis
 
 #### Postwork
 
-- [Postwork](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-04/Postwork)
+- [Postwork](Postwork/Readme.md)

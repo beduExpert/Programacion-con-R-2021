@@ -12,18 +12,18 @@ Se estudian conceptos básicos de estadística para contextualizar al alumno y s
 
 #### Los ejemplos y retos de esta sesión 2 son los siguientes:
 
-- [Ejemplo 1](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-02/Ejemplo-01) Medidas de tendencia central, de posición y de dispersión
-- [Reto 1](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-02/Reto-01) Medidas de tendencia central
+- [Ejemplo 1](Ejemplo-01/Readme.md) Medidas de tendencia central, de posición y de dispersión
+- [Reto 1](Reto-01/Readme.md) Medidas de tendencia central
 
-- [Ejemplo 2](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-02/Ejemplo-02) Características de los objetos (`str`, `summary`, `head` y `View`) y funciones
-- [Reto 2](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-02/Reto-02) Características de los objetos y funciones
+- [Ejemplo 2](Ejemplo-02/Readme.md) Características de los objetos (`str`, `summary`, `head` y `View`) y funciones
+- [Reto 2](Reto-02/Readme.md) Características de los objetos y funciones
 
-- [Ejemplo 3](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-02/Ejemplo-03) Paquete `dplyr` y aplicaciones
-- [Ejemplo 4](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-02/Ejemplo-04) Funciones `cbind`, `rbind` (manipulación de data frames)
-- [Ejemplo 5](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-02/Ejemplo-05) Funciones `apply`, `lapply` y `do.call`
-- [Reto 3](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-02/Reto-03) Lectura de datos y usos de `dplyr`
-- [Ejemplo 6](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-02/Ejemplo-06) Funciones `na.omit` y `complete.cases`
+- [Ejemplo 3](Ejemplo-03/Readme.md) Paquete `dplyr` y aplicaciones
+- [Ejemplo 4](Ejemplo-04/Readme.md) Funciones `cbind`, `rbind` (manipulación de data frames)
+- [Ejemplo 5](Ejemplo-05/Readme.md) Funciones `apply`, `lapply` y `do.call`
+- [Reto 3](Reto-03/Readme.md) Lectura de datos y usos de `dplyr`
+- [Ejemplo 6](Ejemplo-06/Readme.md) Funciones `na.omit` y `complete.cases`
 
 ## Postwork
 
-- [Postwork](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-02/Postwork)
+- [Postwork](Postwork/Readme.md)

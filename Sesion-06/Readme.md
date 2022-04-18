@@ -11,16 +11,16 @@ En esta sesión estudiaremos temas relacionados con los siguientes puntos:
 
 #### Los ejemplos y retos de esta sesión 6 son los siguientes:
 
-- [Ejemplo 1](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-06/Ejemplo-01) Ejemplos de series de tiempo y técnicas descriptivas
-- [Ejemplo 2](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-06/Ejemplo-02) Modelos estocásticos básicos, modelos estacionarios y predicción
-- [Reto 1](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-06/Reto-01) Proceso AR(1)
+- [Ejemplo 1](Ejemplo-01/Readme.md) Ejemplos de series de tiempo y técnicas descriptivas
+- [Ejemplo 2](Ejemplo-02/Readme.md) Modelos estocásticos básicos, modelos estacionarios y predicción
+- [Reto 1](Reto-01/Readme.md) Proceso AR(1)
 
 Opcionales 
 
-- [Ejemplo 3](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-06/Ejemplo-03) Modelos no estacionarios y predicción
-- [Reto 2](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-06/Reto-02) Proceso ARIMA(1, 1, 1)
-- [Reto 3](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-06/Reto-03) Gráfica de series de tiempo
+- [Ejemplo 3](Ejemplo-03/Readme.md) Modelos no estacionarios y predicción
+- [Reto 2](Reto-02/Readme.md) Proceso ARIMA(1, 1, 1)
+- [Reto 3](Reto-03/Readme.md) Gráfica de series de tiempo
 
 #### Postwork de la sesión 6
 
-- [Postwork](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-06/Postwork)
+- [Postwork](Postwork/Readme.md)
